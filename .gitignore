@@ -1,0 +1,10 @@
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
+
+# Ignore Play! working directory
+tmp
+log
+test-result
+eclipse
