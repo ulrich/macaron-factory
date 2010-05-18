@@ -19,7 +19,7 @@ public class BasicTest extends UnitTest {
    }
 
    @Test
-   public void crudMacaroon() {
+   public void crudOnMacaroon() {
       // creating light and heavy macaroons
       new Macaroon(Shape.ROUND, new Color(139, 69, 19), 3.5f, 10f, "Chocolate", "chocolate1.gif", "The chocolate macaroon...").save();
       new Macaroon(Shape.ROUND, Color.WHITE, 3.5f, 5f, "Coconut", "Coconut1.gif", "The coconut macaroon...").save();
@@ -43,10 +43,11 @@ public class BasicTest extends UnitTest {
       assertEquals(1, Macaroon.count());
       List<Macaroon> availableMacaroon = Macaroon.findAll();
       assertEquals(1, availableMacaroon.size());
+      assertEquals("Coconut", availableMacaroon.get(0).name);
    }
 
    @Test
-   public void createAndFindCompostion() {
+   public void crudOnCompostion() {
       new Composition("Angelina", "Angelina composition description").save();
       // finding Angelina composition with bad name
       Composition savedComposition = Composition.find("byName", "_Angelina").first();
