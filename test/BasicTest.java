@@ -19,18 +19,30 @@ public class BasicTest extends UnitTest {
    }
 
    @Test
-   public void createAndFindMacaroon() {
-      // creating heavy macaroons
+   public void crudMacaroon() {
+      // creating light and heavy macaroons
       new Macaroon(Shape.ROUND, new Color(139, 69, 19), 3.5f, 10f, "Chocolate", "chocolate1.gif", "The chocolate macaroon...").save();
-      // creating light macaroons
       new Macaroon(Shape.ROUND, Color.WHITE, 3.5f, 5f, "Coconut", "Coconut1.gif", "The coconut macaroon...").save();
-      // test the macaroons size list
+
+      // test the macaroons list size
       assertEquals(2, Macaroon.count());
-      // finding heavy macaroon
-      List<Macaroon> macaroons = Macaroon.find("byWeight", 10f).fetch();
-      assertNotNull(macaroons);
-      assertEquals(1, macaroons.size());
-      assertEquals(10f, macaroons.get(0).weight, 0f);
+
+      // finding Chocolate macaroon
+      Macaroon chocolateMacaroon = Macaroon.find("byWeight", 10f).first();
+      assertNotNull(chocolateMacaroon);
+      assertEquals(10f, chocolateMacaroon.weight, 0f);
+
+      // updating Chocolate macaroon profile
+      chocolateMacaroon.weight = 2f;
+      chocolateMacaroon.save();
+      Macaroon updatedChocolateMacaroon = Macaroon.find("byWeight", 2f).first();
+      assertNotNull(updatedChocolateMacaroon);
+
+      // deleting Chocolate macaroon
+      updatedChocolateMacaroon.delete();
+      assertEquals(1, Macaroon.count());
+      List<Macaroon> availableMacaroon = Macaroon.findAll();
+      assertEquals(1, availableMacaroon.size());
    }
 
    @Test
