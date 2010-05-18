@@ -48,33 +48,44 @@ public class BasicTest extends UnitTest {
 
    @Test
    public void crudOnCompostion() {
+      // creating Angelina composition
       new Composition("Angelina", "Angelina composition description").save();
-      // finding Angelina composition with bad name
-      Composition savedComposition = Composition.find("byName", "_Angelina").first();
-      assertNull(savedComposition);
-      // finding Angelina composition with good name
-      savedComposition = Composition.find("byName", "Angelina").first();
-      assertNotNull(savedComposition);
+
+      // test the composition list
+      assertEquals(1, Composition.count());
+
+      // finding Angelina composition
+      Composition angelinaComposition = Composition.find("byName", "Angelina").first();
+      assertNotNull(angelinaComposition);
+      assertEquals("Angelina composition description", angelinaComposition.description);
+
+      // updating Angelina composition
+      angelinaComposition.description = "The updated Angelina composition description";
+      angelinaComposition.save();
+      Composition updatedAngelinaComposition = Composition.find("byName", "Angelina").first();
+      assertNotNull(updatedAngelinaComposition);
+      assertEquals("The updated Angelina composition description", updatedAngelinaComposition.description);
+
+      // deleting Angelina composition
+      updatedAngelinaComposition.delete();
+      assertEquals(0, Composition.count());
    }
 
    @Test
    public void addMacaroonToComposition() {
-      // creating strawberry and lemon macaroons
-      Macaroon strawberry = new Macaroon(Shape.ROUND, Color.RED, 3.5f, 15f, "Strawberry", "strawberry1.gif", "The strawberry macarron...").save();
-      Macaroon lemon = new Macaroon(Shape.ROUND, Color.YELLOW, 3.5f, 10f, "Lemon", "lemon1.gif", "The lemon macarron...").save();
-      // creating dummy composition
-      Composition astrid = new Composition("Astrid", "Astrid composition description").save();
-      astrid.addMacaroon(strawberry);
-      astrid.addMacaroon(lemon);
-      // finding Astrid composition
-      Composition savedComposition = Composition.find("byName", "Astrid").first();
-      // testing macaroons size list
-      assertEquals(2, savedComposition.macaroonList.size());
-   }
+      // load set of data file
+      Fixtures.load("data.yml");
 
-   public void deleteMacaroonFromComposition() {
-      // creating dummy composition
-      Composition angele = new Composition("Angele", "Angele composition description").save();
+      // finding a composition
+      Composition smallMacComposition = Composition.find("name", "Angelina").first();
+      assertNotNull(smallMacComposition);
 
+      // finding and adding small mac in this composition
+      List<Macaroon> smallMacaroonList = Macaroon.find("from Macaroon where weight = :weight").query.setParameter("weight", 20f).getResultList();
+      assertEquals(3, smallMacaroonList.size());
+      for (Macaroon macaroon : smallMacaroonList) {
+         smallMacComposition.addMacaroon(macaroon);
+      }
+      smallMacComposition.save();
    }
 }
