@@ -1,0 +1,46 @@
+Macaroon(lemon):
+    shape:          ROUND
+    color:          YELLOW
+    diameter:       3.5f
+    weight:         20f
+    name:           Lemon Macaroon
+    picture:        lemon1.jpg
+    description:    This is the Lemon Macaroon description
+
+Macaroon(chocolate):
+    shape:          ROUND
+    color:          BLACK
+    diameter:       3.5f
+    weight:         20f
+    name:           Chocolate Macaroon
+    picture:        chocolate1.jpg
+    description:    This is the Chocolate Macaroon description
+
+Macaroon(strawberrySmall):
+    shape:          ROUND
+    color:          RED
+    diameter:       3.5f
+    weight:         20f
+    name:           Strawberry Macaroon
+    picture:        strawberry1.jpg
+    description:    This is the Strawberry small Macaroon description
+
+Macaroon(strawberryLarge):
+    shape:          ROUND
+    color:          RED
+    diameter:       7f
+    weight:         40f
+    name:           Large Strawberry Macaroon
+    picture:        strawberry2.jpg
+    description:    This is the large Strawberry Macaroon description
+
+Composition(astrid):
+    name:          Astrid
+    shortDescription:   Astrid composition short description
+    fullDescription:    Astrid composition full description
+    macaroonList:       [chocolate, strawberrySmall]
+
+Composition(angelina):
+    name:          Angelina
+    shortDescription:   Angelina composition short description
+    fullDescription:    Astrid composition full description

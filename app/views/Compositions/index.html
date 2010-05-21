@@ -1,0 +1,32 @@
+#{extends 'main.html' /}
+#{set title:'Nos compositions' /}
+
+<h1>Les compositions disponibles</h1>
+
+#{ifnot compositions}
+    <p>
+        Pas de composition disponible
+    </p>
+#{/ifnot}
+#{else}
+   <table>
+       <thead>
+           <tr>
+               <th>Nome</th>
+               <th>Description</th>
+               <th>D&eacute;tail</th>
+           </tr>
+       </thead>
+       <tbody>
+           #{list compositions, as:'composition'}
+               <tr>
+                   <td>${composition.name}</td>
+                   <td>${composition.shortDescription}</td>
+                   <td>
+                        #{a @show(composition.id)}Voir le d&eacute;tail#{/a}
+                   </td>
+               </tr>
+           #{/list}
+       </tbody>
+   </table> 
+#{/else}

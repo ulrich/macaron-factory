@@ -11,13 +11,17 @@ import play.db.jpa.Model;
 @Entity
 public class Composition extends Model {
    public String name;
-   public String description;
+   public String shortDescription;
+   public String fullDescription;
+   public float price;
    @OneToMany
    public List<Macaroon> macaroonList;
 
-   public Composition(String name, String description) {
+   public Composition(String name, String shortDescription, String fullDescription, float price) {
       this.name = name;
-      this.description = description;
+      this.shortDescription = shortDescription;
+      this.fullDescription = fullDescription;
+      this.price = price;
       macaroonList = new ArrayList<Macaroon>();
    }
 

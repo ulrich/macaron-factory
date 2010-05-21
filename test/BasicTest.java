@@ -49,7 +49,7 @@ public class BasicTest extends UnitTest {
    @Test
    public void crudOnCompostion() {
       // creating Angelina composition
-      new Composition("Angelina", "Angelina composition description").save();
+      new Composition("Angelina", "Angelina composition short description...", "Angelina composition full description...", 15f).save();
 
       // test the composition list
       assertEquals(1, Composition.count());
@@ -57,14 +57,14 @@ public class BasicTest extends UnitTest {
       // finding Angelina composition
       Composition angelinaComposition = Composition.find("byName", "Angelina").first();
       assertNotNull(angelinaComposition);
-      assertEquals("Angelina composition description", angelinaComposition.description);
+      assertEquals("Angelina composition short description...", angelinaComposition.shortDescription);
 
       // updating Angelina composition
-      angelinaComposition.description = "The updated Angelina composition description";
+      angelinaComposition.shortDescription = "The updated Angelina composition short description";
       angelinaComposition.save();
       Composition updatedAngelinaComposition = Composition.find("byName", "Angelina").first();
       assertNotNull(updatedAngelinaComposition);
-      assertEquals("The updated Angelina composition description", updatedAngelinaComposition.description);
+      assertEquals("The updated Angelina composition short description", updatedAngelinaComposition.shortDescription);
 
       // deleting Angelina composition
       updatedAngelinaComposition.delete();
@@ -74,7 +74,7 @@ public class BasicTest extends UnitTest {
    @Test
    public void addMacaroonToComposition() {
       // load set of data file
-      Fixtures.load("data.yml");
+      Fixtures.load("data-test.yml");
 
       // finding a composition
       Composition smallMacComposition = Composition.find("name", "Angelina").first();
@@ -86,6 +86,17 @@ public class BasicTest extends UnitTest {
       for (Macaroon macaroon : smallMacaroonList) {
          smallMacComposition.addMacaroon(macaroon);
       }
-      smallMacComposition.save();
+      //smallMacComposition.save();
+   }
+
+   //@Test
+   public void searchMacarronByCompositionType() {
+      // load set of data file
+      Fixtures.load("data-test.yml");
+
+      // finding composition by type
+      List<Composition> composition = Composition.find("select c.id from composition c "
+            + "inner join composition_macaroon m on c.id = m.id where count(macaroonList) = :size").query.setParameter("size", 3).getResultList();
+      assertNotNull(composition);
    }
 }
