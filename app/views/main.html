@@ -2,8 +2,6 @@
    <HEAD>
       <TITLE>Bienvenue chez Macaron-Factory</TITLE>
       <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-
-      <!-- ImageReady Preload Script (index.psd) -->
       <SCRIPT TYPE="text/javascript">
          <!--
          function newImage(arg) {
@@ -34,179 +32,203 @@
          }
          // -->
       </SCRIPT>
-      <!-- End Preload Script -->
-
       <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/mf.css'}">
    </HEAD>
 
    <BODY BGCOLOR=#FFFFFF LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" ONLOAD="preloadImages();">
       <CENTER>
-         <table WIDTH="780px" BORDER="0" CELLPADDING="0" CELLSPACING="0">
-            <TR height="60px" align="right">
-               <TD>
+         <!-- header -->
+         <table id="header" WIDTH="850px" CELLPADDING="0" CELLSPACING="0">
+            <tr height="60px" align="center">
+               <td>
                   <A HREF="#" ONMOUSEOVER="window.status='home page'; changeImages('home_page', '@{'/public/images/home-page-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('home_page', '@{'/public/images/home-page.jpg'}'); return true;">
-                     <IMG NAME="home_page" SRC="@{'/public/images/home-page.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="home page">
+                     <IMG NAME="home_page" SRC="@{'/public/images/home-page.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="home page" />
                   </A>
-               </TD>
-               <TD>
+               </td>
+               <td>
                   <A HREF="#" ONMOUSEOVER="window.status='products'; changeImages('products', '@{'/public/images/products-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('products', '@{'/public/images/products.jpg'}'); return true;">
-                     <IMG NAME="products" SRC="@{'/public/images/products.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="products">
+                     <IMG NAME="products" SRC="@{'/public/images/products.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="products" />
                   </A>
-               </TD>
-               <TD>
+               </td>
+               <td>
                   <A HREF="#" ONMOUSEOVER="window.status='about us'; changeImages('about_us', '@{'/public/images/about-us-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('about_us', '@{'/public/images/about-us.jpg'}'); return true;">
                      <IMG NAME="about_us" SRC="@{'/public/images/about-us.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="about us">
                   </A>
-               </TD>
-               <TD>
+               </td>
+               <td>
                   <A HREF="#" ONMOUSEOVER="window.status='contacts'; changeImages('contacts', '@{'/public/images/contacts-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('contacts', '@{'/public/images/contacts.jpg'}'); return true;">
                      <IMG NAME="contacts" SRC="@{'/public/images/contacts.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="contacts"/>
                   </A>
-               </TD>
-            </TR>
-            <tr>
-               <table WIDTH="780px" BORDER="0" CELLPADDING="5" CELLSPACING="5">
-                  <tr>
-                     <td>
-                        <IMG SRC="@{'/public/images/m2.jpg'}" WIDTH=425 HEIGHT=228 ALT=""/>
-                     </td>
-                     <td>
-                        <table width="350px">
-                           <tr>
-                              <td width="300px">
-                                 <IMG SRC="@{'/public/images/m3.jpg'}" WIDTH=350 HEIGHT=119 ALT=""/>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td class="text2" width="300px">
-                                 <span class="text3">Imaginez une farandole de macarons,</span> aux parfums des plus classiques aux plus insolites. Notre gamme s'étend sur plus de trente variétés de produits différents. Le macaron étant pour nous une passion, nous nous efforçons de produire un met de qualité et investissons dans le meilleur de la matière première.<br/>
-                              </td>
-                           <tr>
-                              <td width="300px">
-                                 <a href="#" class="a">En savoir plus</a>
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-               </table>
+               </td>
             </tr>
-            <tr>
-               <table WIDTH="780px" BORDER="0" CELLPADDING="5" CELLSPACING="5">
-                  <tr>
-                     <td width="25%" valign="top">
-                        <table BORDER="0" CELLPADDING="5" CELLSPACING="0">
-                           <th colspan="3">
-                              <IMG SRC="@{'/public/images/nw1.jpg'}" WIDTH="250" HEIGHT="35" ALT=""/>
-                           </th>
-                           <!-- begin of repeat events loop -->
-                           <tr>
-                              <td width="20%" align="right" valign="top" >
-                                 <IMG SRC="@{'/public/images/dot-grey.jpg'}" ALT=""/>
-                              </td>
-                              <td width="60%" align="left">
-                                 <span class="greenTitle">02/05/2010</span><br/>
-                                 Macaron-Factory prépare une grosse commande en vue d'un mariage pour juin 2010 !
-                              </td>
-                              <td width="20%">
-                                 <IMG SRC="@{'/public/images/spacer.gif'}" ALT="">
-                              </td>
-                           </tr>
-                           <tr>
-                              <td width="20%" align="right" valign="top" >
-                                 <IMG SRC="@{'/public/images/dot-grey.jpg'}" ALT=""/>
-                              </td>
-                              <td width="60%" align="left">
-                                 <span class="greenTitle">15/04/2010</span><br/>
-                                 Venez découvrir notre nouvelle composition fruitée portée par un chocolat doux : <a href="#" class="a">Angèle</a>.
-                              </td>
-                              <td width="20%">
-                                 <IMG SRC="@{'/public/images/spacer.gif'}" ALT="">
-                              </td>
-                           </tr>
-                           <tr>
-                              <td width="20%" align="right" valign="top" >
-                                 <IMG SRC="@{'/public/images/dot-grey.jpg'}" ALT=""/>
-                              </td>
-                              <td width="60%" align="left">
-                                 <span class="greenTitle">01/03/2010</span><br/>
-                                 Soyez les premiers à être informés sur nos créations et évenements sur <a href="http://twitter.com/macaronfactory" class="a" target="_blank">Twitter</a>.
-                              </td>
-                              <td width="20%">
-                                 <IMG SRC="@{'/public/images/spacer.gif'}" ALT="">
-                              </td>
-                           </tr>
-                           <!-- end of repeat events loop -->
-                           <tr>
-                              <td colspan="3" align="right">
-                                 <a href="#" class="a">En savoir plus</a>
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                     <td width="5%">
-                        <img SRC="@{'/public/images/sr1.jpg'}" ALT="">
-                     </td>
-                     <td width="70%" valign="top">
-                        <table BORDER="0" CELLPADDING="5" CELLSPACING="0" >
-                           <!-- display 2 randomized compositions -->
-                           <th colspan="2">
-                              <IMG SRC="@{'/public/images/sr2.jpg'}" ALT="" />
-                           </th>
-                           <tr height="1">
-                              <!-- first composition detail -->
-                              <td width="50%px" height="225px">
-                                 <table border="0" width="100%" height="100%">
-                                    <tr height="60%">
-                                       <td>
-                                          <IMG SRC="@{'/public/images/sr3.jpg'}" ALT="">
-                                       </td>
-                                       <td>
-                                          <span class="greenTitle">L'Astrid</span><br/>
-                                          Composée de macarons de caractères pour accompagner tous vos desserts.
-                                       </td>
-                                    </tr>
-                                    <tr height="40%">
-                                       <td colspan="2">
-                                          <span class="text3">Cette composition de caractère</span> est une avalanche de saveurs parfumée mélée au raffinement d'un chocolat d'exception.<br/>
-                                          <a href="#" class="a">
-                                             En savoir plus
-                                          </a>
-                                       </td>
-                                    </tr>
-                                 </table>
-                              </td>
-                              <!-- second composition detail -->
-                              <td width="50%px" height="225px">
-                                 <table border="0" width="100%" height="100%">
-                                    <tr height="60%">
-                                       <td>
-                                          <IMG SRC="@{'/public/images/sr4.jpg'}" ALT="">
-                                       </td>
-                                       <td>
-                                          <span class="greenTitle">L'Angélina</span><br/>
-                                          Composée de macarons raffinés pour accompagner à l'heure du thé.
-                                       </td>
-                                    </tr>
-                                    <tr height="40%">
-                                       <td colspan="2">
-                                          <span class="text3">Cette composition raffinée</span> se marie parfaitement avec un thé classique ou bien primeur.<br/>
-                                          <a href="#" class="a">
-                                             En savoir plus
-                                          </a>
-                                       </td>
-                                    </tr>
-                                 </table>
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-               </table>
+         </table>
+
+         <table id="main" WIDTH="850px" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+            <tr id="title" align="center">
+               <td>
+                  <table WIDTH="780px" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+                     <tr>
+                        <td>
+                           <IMG SRC="@{'/public/images/m2.jpg'}" WIDTH="425" HEIGHT="228" ALT=""/>
+                        </td>
+                        <td>
+                           <table width="350px">
+                              <tr>
+                                 <td width="300px">
+                                    <IMG SRC="@{'/public/images/m3.jpg'}" WIDTH=350 HEIGHT=119 ALT=""/>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="text2" width="300px">
+                                    <span class="text3">Imaginez une farandole de macarons,</span> aux parfums des plus classiques aux plus insolites. Notre gamme s'étend sur plus de trente variétés de produits différents. Le macaron étant pour nous une passion, nous nous efforçons de produire un met de qualité et investissons dans le meilleur de la matière première.<br/>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td width="300px">
+                                    <a href="#" class="a">En savoir plus</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
             </tr>
+         </table>
+
+         <table>
             <tr>
+               <td>
+                  <table WIDTH="850px" BORDER="0" CELLPADDING="5" CELLSPACING="0">
+                     <tr>
+                        <td width="25%" valign="top">
+                           <table BORDER="0" CELLPADDING="5" CELLSPACING="0">
+                              <tr>
+                                 <th colspan="3">
+                                    <IMG SRC="@{'/public/images/nw1.jpg'}" WIDTH="250" HEIGHT="35" ALT=""/>
+                                 </th>
+                              </tr>
+                              <!-- begin of repeat events loop -->
+                              <tr>
+                                 <td width="20%" align="right" valign="top" >
+                                    <IMG SRC="@{'/public/images/dot-grey.jpg'}" ALT=""/>
+                                 </td>
+                                 <td width="60%" align="left">
+                                    <span class="greenTitle">02/05/2010</span><br/>
+                                    Macaron-Factory prépare une grosse commande en vue d'un mariage pour juin 2010 !
+                                 </td>
+                                 <td width="20%">
+                                    <IMG SRC="@{'/public/images/spacer.gif'}" ALT="">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td width="20%" align="right" valign="top" >
+                                    <IMG SRC="@{'/public/images/dot-grey.jpg'}" ALT=""/>
+                                 </td>
+                                 <td width="60%" align="left">
+                                    <span class="greenTitle">15/04/2010</span><br/>
+                                    Venez découvrir notre nouvelle composition fruitée portée par un chocolat doux : <a href="#" class="a">Angèle</a>.
+                                 </td>
+                                 <td width="20%">
+                                    <IMG SRC="@{'/public/images/spacer.gif'}" ALT="">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td width="20%" align="right" valign="top" >
+                                    <IMG SRC="@{'/public/images/dot-grey.jpg'}" ALT=""/>
+                                 </td>
+                                 <td width="60%" align="left">
+                                    <span class="greenTitle">01/03/2010</span><br/>
+                                    Soyez les premiers à être informés sur nos créations et évenements sur <a href="http://twitter.com/macaronfactory" class="a" target="_blank">Twitter</a>.
+                                 </td>
+                                 <td width="20%">
+                                    <IMG SRC="@{'/public/images/spacer.gif'}" ALT="">
+                                 </td>
+                              </tr>
+                              <!-- end of repeat events loop -->
+                              <tr>
+                                 <td colspan="3" align="right">
+                                    <a href="#" class="a">En savoir plus</a>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                        <td width="5%">
+                           <img SRC="@{'/public/images/sr1.jpg'}" ALT="">
+                        </td>
+                        <td width="70%" valign="top">
+                           <table BORDER="0" CELLPADDING="5" CELLSPACING="0" >
+                              <!-- display 2 randomized compositions -->
+                              <tr>
+                                 <th colspan="2">
+                                    <IMG SRC="@{'/public/images/sr2.jpg'}" ALT="" />
+                                 </th>
+                              </tr>
+                              <tr>
+                                 <!-- first composition detail -->
+                                 <td width="50%px" height="225px">
+                                    <table border="0" width="100%" height="100%">
+                                       <tr height="60%">
+                                          <td>
+                                             <IMG SRC="@{'/public/images/sr3.jpg'}" ALT="">
+                                          </td>
+                                          <td>
+                                             <span class="greenTitle">L'Astrid</span><br/>
+                                             Composée de macarons de caractères pour accompagner tous vos desserts.
+                                          </td>
+                                       </tr>
+                                       <tr height="40%">
+                                          <td colspan="2">
+                                             <span class="text3">Cette composition de caractère</span> est une avalanche de saveurs parfumée mélée au raffinement d'un chocolat d'exception.<br/>
+                                             <a href="#" class="a">
+                                                En savoir plus
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <!-- second composition detail -->
+                                 <td width="50%px" height="225px">
+                                    <table border="0" width="100%" height="100%">
+                                       <tr height="60%">
+                                          <td>
+                                             <IMG SRC="@{'/public/images/sr4.jpg'}" ALT="">
+                                          </td>
+                                          <td>
+                                             <span class="greenTitle">L'Angélina</span><br/>
+                                             Composée de macarons raffinés pour accompagner à l'heure du thé.
+                                          </td>
+                                       </tr>
+                                       <tr height="40%">
+                                          <td colspan="2">
+                                             <span class="text3">Cette composition raffinée</span> se marie parfaitement avec un thé classique ou bien primeur.<br/>
+                                             <a href="#" class="a">
+                                                En savoir plus
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+
+         <table WIDTH="850px" BORDER="0" CELLPADDING="5" CELLSPACING="0">
             <tr>
-               <td>Copyright © Macaron Factory.</td>
+               <td HEIGHT="40" align="center" valign="middle" BGCOLOR=#979076 class="text4">
+                  <a href="#">Accueil</a> |
+                  <a href="#">A propos de nous</a> |
+                  <a href="#">Informations légales</a> |
+                  <a href="#">Nous contacter</a>
+               </td>
+            </tr>
+            <tr align="center">
+               <td>Copyright © Macaron Factory</td>
             </tr>
          </table>
       </center>
