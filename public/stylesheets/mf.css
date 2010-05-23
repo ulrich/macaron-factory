@@ -2,9 +2,10 @@ body {
 	margin-bottom: 0px;
 	background-color: #FFFFFF;
 }
+
 td, textarea, input, select {
 	font-family: Tahoma;
-	font-size: 10px;
+	font-size: 11px;
 	color: 5c5c5c;
 	font-weight: normal;
 	line-height: 14px;
@@ -14,62 +15,37 @@ td, textarea, input, select {
 	border: 1px solid #E8E9D7;
 }
 
-.text1 {
+.greenTitle {
 	font-family: tahoma;
-	font-size: 10px;
+	font-size: 11px;
 	color: 9ea91c;
 	font-weight: bold;
 }
 .text2 {
 	font-family: tahoma;
-	font-size: 11px;
+	font-size: 13px;
 	font-weight: normal;
 	color: b3b3b3;
 }
 .text3 {
 	font-family: tahoma;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: bold;
 	color: 9ea91c;
 }
+
 .text4 {
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
 	color: #FFFFFF;
 }
-.text5 {
+
+.footer {
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
 	color: 979076;
-}
-.text6 {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: bold;
-	color: #FFFFFF;
-}
-.text7 {
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: #000000;
-}
-.text8 {
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 94AEC5;
-}
-.text9 {
-
-
-	font-family: tahoma;
-	font-size: 10px;
-	font-weight: normal;
-	color: 4E4E4E;
 }
 
 a:link {
@@ -80,6 +56,7 @@ a:link {
 	text-decoration: none;
 
 }
+
 a:visited {
 	color: #FFFFFF;
 	font-family: tahoma;
@@ -116,6 +93,7 @@ a.a:visited {
 	color: 53534b;
 	text-decoration: underline;
 }
+
 a.a:hover {
 	font-family: tahoma;
 	font-size: 11px;
@@ -125,13 +103,13 @@ a.a:hover {
 }
 
 a.b:link {
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: bold;
 	color: 9ea91c;
 	text-decoration: none;
 }
+
 a.b:visited {
 	font-family: tahoma;
 	font-size: 10px;
@@ -139,6 +117,7 @@ a.b:visited {
 	color: 9ea91c;
 	text-decoration: none;
 }
+
 a.b:hover {
 	font-family: tahoma;
 	font-size: 10px;
@@ -154,16 +133,16 @@ a.c:link {
 	color: 71A2CB;
 	text-decoration: none;
 }
-a.c:visited {
 
+a.c:visited {
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
 	color: 71A2CB;
 	text-decoration: none;
 }
-a.c:hover {
 
+a.c:hover {
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
@@ -172,27 +151,22 @@ a.c:hover {
 }
 
 a.d:link {
-
-
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
 	color: #FFFFFF;
 	text-decoration: underline;
 }
+
 a.d:visited {
-
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
 	color: #FFFFFF;
 	text-decoration: underline;
 }
+
 a.d:hover {
-
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: bold;
@@ -201,23 +175,22 @@ a.d:hover {
 }
 
 a.e:link {
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: bold;
 	color: 71A2CB;
 	text-decoration: underline;
 }
+
 a.e:visited {
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: bold;
 	color: 71A2CB;
 	text-decoration: underline;
 }
-a.e:hover {
 
+a.e:hover {
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: bold;
@@ -226,23 +199,22 @@ a.e:hover {
 }
 
 a.f:link {
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
 	color: 898989;
 	text-decoration: underline;
 }
+
 a.f:visited {
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
 	color: 898989;
 	text-decoration: underline;
 }
-a.f:hover {
 
+a.f:hover {
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: normal;
@@ -251,23 +223,22 @@ a.f:hover {
 }
 
 a.g:link {
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: bold;
 	color: #000000;
 	text-decoration: underline;
 }
+
 a.g:visited {
-
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: bold;
 	color: #000000;
 	text-decoration: underline;
 }
-a.g:hover {
 
+a.g:hover {
 	font-family: tahoma;
 	font-size: 10px;
 	font-weight: bold;

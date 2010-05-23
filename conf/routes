@@ -4,6 +4,7 @@
 
 # Home page
 GET     /                                       Application.index
+GET     /older                                  Application.older
 GET     /compositions                           Compositions.index
 GET     /compositions/{id}                      Compositions.show
 
