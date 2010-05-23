@@ -1,7 +1,9 @@
 import java.awt.Color;
+import java.util.Date;
 import java.util.List;
 
 import models.Composition;
+import models.Event;
 import models.Macaroon;
 import models.Shape;
 
@@ -73,7 +75,6 @@ public class BasicTest extends UnitTest {
 
    @Test
    public void addMacaroonToComposition() {
-      // load set of data file
       Fixtures.load("data-test.yml");
 
       // finding a composition
@@ -91,12 +92,25 @@ public class BasicTest extends UnitTest {
 
    //@Test
    public void searchMacarronByCompositionType() {
-      // load set of data file
       Fixtures.load("data-test.yml");
 
       // finding composition by type
       List<Composition> composition = Composition.find("select c.id from composition c "
             + "inner join composition_macaroon m on c.id = m.id where count(macaroonList) = :size").query.setParameter("size", 3).getResultList();
       assertNotNull(composition);
+   }
+
+   public void crudEvent() {
+      Date currentDate = new Date();
+
+      // creating event
+      new Event(currentDate, "Macaron-Factory prépare une grosse commande en vue d'un mariage pour juin 2010 !").save();
+
+      // testing the event list size
+      assertEquals(1, Event.count());
+
+      // finding the event
+      Event juneEvent = Event.find("byDate", currentDate).first();
+      assertNotNull(juneEvent);
    }
 }
