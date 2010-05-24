@@ -14,6 +14,7 @@ public class Composition extends Model {
    public String shortDescription;
    public String fullDescription;
    public float price;
+   public boolean highlighted;
    @OneToMany
    public List<Macaroon> macaroonList;
 

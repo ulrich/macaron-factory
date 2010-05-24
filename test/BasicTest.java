@@ -100,6 +100,7 @@ public class BasicTest extends UnitTest {
       assertNotNull(composition);
    }
 
+   @Test
    public void crudEvent() {
       Date currentDate = new Date();
 
@@ -112,5 +113,15 @@ public class BasicTest extends UnitTest {
       // finding the event
       Event juneEvent = Event.find("byDate", currentDate).first();
       assertNotNull(juneEvent);
+
+      // updating description
+      juneEvent.description = "Macaron-Factory retenu pour un mariage en juin 2010 !";
+      juneEvent.save();
+      Event updatedJuneEvent = Event.find("byDate", currentDate).first();
+      assertEquals("Macaron-Factory retenu pour un mariage en juin 2010 !", updatedJuneEvent.description);
+
+      // deleting the event
+      updatedJuneEvent.delete();
+      assertEquals(0, Event.count());
    }
 }
