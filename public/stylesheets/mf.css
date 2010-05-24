@@ -47,6 +47,14 @@ td, textarea, input, select {
    line-height: 16px;
 }
 
+.compositionPrice {
+   font-family: Tahoma;
+   font-size: 12px;
+   color: 5c5c5c;
+   font-weight: bold;
+   line-height: 16px;
+}
+
 .eventDate {
    font-family: tahoma;
    font-size: 11px;

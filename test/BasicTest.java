@@ -1,11 +1,9 @@
-import java.awt.Color;
 import java.util.Date;
 import java.util.List;
 
 import models.Composition;
 import models.Event;
 import models.Macaroon;
-import models.Shape;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -23,8 +21,8 @@ public class BasicTest extends UnitTest {
    @Test
    public void crudOnMacaroon() {
       // creating light and heavy macaroons
-      new Macaroon(Shape.ROUND, new Color(139, 69, 19), 3.5f, 10f, "Chocolate", "chocolate1.gif", "The chocolate macaroon...").save();
-      new Macaroon(Shape.ROUND, Color.WHITE, 3.5f, 5f, "Coconut", "Coconut1.gif", "The coconut macaroon...").save();
+      new Macaroon("Chocolate", 10f, 3.5f, "The chocolate macaroon...").save();
+      new Macaroon("Coconut", 5f, 3.5f, "The coconut macaroon...").save();
 
       // test the macaroons list size
       assertEquals(2, Macaroon.count());

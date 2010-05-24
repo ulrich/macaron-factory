@@ -1,33 +1,32 @@
 package models;
 
-import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 
+import play.data.validation.Required;
 import play.db.jpa.Model;
 
 @Entity
 public class Macaroon extends Model {
-   public Shape shape;
-   public Color color;
-   public float diameter;
-   public float weight;
+   @Required
    public String name;
-   public String picture;
+   @Required
+   public float weight;
+   @Required
+   public float diameter;
+   @Required
    public String description;
+   public String picture;
    @ManyToMany
    public List<Composition> composition = new ArrayList<Composition>();
 
-   public Macaroon(Shape shape, Color color, float diameter, float weight, String name, String picture, String description) {
-      this.shape = shape;
-      this.color = color;
+   public Macaroon(String name, float weight, float diameter, String description) {
+      this.name = name;
       this.diameter = diameter;
       this.weight = weight;
-      this.name = name;
-      this.picture = picture;
       this.description = description;
    }
 }

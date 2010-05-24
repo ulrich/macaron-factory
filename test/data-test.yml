@@ -1,38 +1,30 @@
 Macaroon(lemon):
-    shape:          ROUND
-    color:          YELLOW
-    diameter:       3.5f
-    weight:         20f
     name:           Lemon Macaroon
-    picture:        lemon1.jpg
+    weight:         20f
+    diameter:       3.5f
     description:    This is the Lemon Macaroon description
+    picture:        lemon1.jpg
 
 Macaroon(chocolate):
-    shape:          ROUND
-    color:          BLACK
-    diameter:       3.5f
-    weight:         20f
     name:           Chocolate Macaroon
-    picture:        chocolate1.jpg
+    weight:         20f
+    diameter:       3.5f
     description:    This is the Chocolate Macaroon description
+    picture:        chocolate1.jpg
 
 Macaroon(strawberrySmall):
-    shape:          ROUND
-    color:          RED
-    diameter:       3.5f
-    weight:         20f
     name:           Strawberry Macaroon
-    picture:        strawberry1.jpg
+    weight:         20f
+    diameter:       3.5f
     description:    This is the Strawberry small Macaroon description
+    picture:        strawberry1.jpg
 
 Macaroon(strawberryLarge):
-    shape:          ROUND
-    color:          RED
-    diameter:       7f
-    weight:         40f
     name:           Large Strawberry Macaroon
-    picture:        strawberry2.jpg
+    weight:         40f
+    diameter:       7f
     description:    This is the large Strawberry Macaroon description
+    picture:        strawberry2.jpg
 
 Composition(astrid):
     name:          Astrid

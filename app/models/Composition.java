@@ -6,14 +6,20 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
+import play.data.validation.Required;
 import play.db.jpa.Model;
 
 @Entity
 public class Composition extends Model {
+   @Required
    public String name;
+   @Required
    public String shortDescription;
+   @Required
    public String fullDescription;
+   @Required
    public float price;
+   public String picture;
    public boolean highlighted;
    @OneToMany
    public List<Macaroon> macaroonList;
