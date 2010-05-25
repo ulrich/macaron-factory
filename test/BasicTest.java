@@ -101,7 +101,6 @@ public class BasicTest extends UnitTest {
    @Test
    public void crudEvent() {
       Date currentDate = new Date();
-
       // creating event
       new Event(currentDate, "Macaron-Factory prépare une grosse commande en vue d'un mariage pour juin 2010 !").save();
 
@@ -121,5 +120,14 @@ public class BasicTest extends UnitTest {
       // deleting the event
       updatedJuneEvent.delete();
       assertEquals(0, Event.count());
+   }
+
+   @Test
+   public void findHighlightedComposition() {
+      Fixtures.load("data-test.yml");
+
+      // finding highlighted composition (max 2)
+      List<Composition> highlightedComposition = Composition.findHighlighted();
+      assertEquals(2, highlightedComposition.size());
    }
 }

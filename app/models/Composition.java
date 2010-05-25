@@ -36,4 +36,8 @@ public class Composition extends Model {
       macaroonList.add(macaroon);
       macaroon.composition.add(this);
    }
+
+   public static List<Composition> findHighlighted() {
+      return Composition.find("from Composition c where c.highlighted = true").fetch(1, 2);
+   }
 }

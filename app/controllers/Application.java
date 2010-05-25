@@ -12,7 +12,7 @@ public class Application extends Controller {
       // finding last three events
       List<Event> events = Event.find("from Event order by date desc").fetch(1, 3);
       // finding compositions discounted (max 2)
-      List<Composition> compositions = Composition.find("from Composition c where c.highlighted = true").fetch(1, 2);
+      List<Composition> compositions = Composition.findHighlighted();
       render(events, compositions);
    }
 

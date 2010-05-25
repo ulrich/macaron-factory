@@ -27,10 +27,26 @@ Macaroon(strawberryLarge):
     picture:        strawberry2.jpg
 
 Composition(astrid):
-    name:          Astrid
-    description:   Astrid composition description
+   name:          Astrid
+   description:   Astrid composition description
+   highlighted:   true
 
 Composition(angelina):
-    name:          Angelina
-    description:   Angelina composition description
-    
+   name:          Angelina
+   description:   Angelina composition description
+   highlighted:   true
+
+Composition(anais):
+   name:          Anaïs
+   description:   Anaïs composition description
+   highlighted:   false
+
+Composition(agnes):
+   name:          Agnes
+   description:   Agnes composition description
+   highlighted:   true
+
+Composition(aby):
+   name:          Aby
+   description:   Aby composition description
+   highlighted:   true
