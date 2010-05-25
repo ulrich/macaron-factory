@@ -21,8 +21,8 @@ public class BasicTest extends UnitTest {
    @Test
    public void crudOnMacaroon() {
       // creating light and heavy macaroons
-      new Macaroon("Chocolate", 10f, 3.5f, "The chocolate macaroon...").save();
-      new Macaroon("Coconut", 5f, 3.5f, "The coconut macaroon...").save();
+      new Macaroon("Chocolate", 10f, 3.5f, "The chocolate macaroon...", "Chocolate").save();
+      new Macaroon("Coconut", 5f, 3.5f, "The coconut macaroon...", "Coconut").save();
 
       // test the macaroons list size
       assertEquals(2, Macaroon.count());

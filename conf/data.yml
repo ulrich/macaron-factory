@@ -5,7 +5,8 @@ Macaroon(menthePoivree):
     name:           Macaron Menthe Poivrée
     weight:         20f
     diameter:       3.5f
-    picture:        menthePoivree1.jpg
+    picture:        cafe1.jpg
+    perfume:        Menthe Poivrée
     description:    A définir
 
 Macaroon(kiwi):
@@ -19,28 +20,31 @@ Macaroon(citron):
     name:           Macaron Citron
     weight:         20f
     diameter:       3.5f
-    picture:        lemon1.jpg
+    picture:        cafe1.jpg
+    perfume:        Citron
     description:    A définir
 
 Macaroon(chocolat):
     name:           Macaron Chocolat
     weight:         20f
     diameter:       3.5f
-    picture:        chocolate1.jpg
+    picture:        chocolat1.jpg
     description:    A définir
 
 Macaroon(chocolatNoir):
     name:           Macaron Chocolat Noir
     weight:         20f
     diameter:       3.5f
-    picture:        chocolateNoir1.jpg
+    picture:        chocolatNoir1.jpg
+    perfume:        Chocolat Noir
     description:    A définir
 
 Macaroon(chocolatOrange):
-    name:           Macaron Chocolate-Orange
+    name:           Macaron Chocolat-Orange
     weight:         20f
     diameter:       3.5f
-    picture:        ChocolateOrange1.jpg
+    picture:        cafe1.jpg
+    perfume:        Chocolat-Orange
     description:    A définir
 
 Macaroon(vanille):
@@ -146,6 +150,7 @@ Macaroon(cafe):
     weight:         20f
     diameter:       3.5f
     picture:        cafe1.jpg
+    perfume:        Café
     description:    A définir
 
 Macaroon(speculos):

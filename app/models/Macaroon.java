@@ -19,14 +19,17 @@ public class Macaroon extends Model {
    public float diameter;
    @Required
    public String description;
+   @Required
+   public String perfume;
    public String picture;
    @ManyToMany
    public List<Composition> composition = new ArrayList<Composition>();
 
-   public Macaroon(String name, float weight, float diameter, String description) {
+   public Macaroon(String name, float weight, float diameter, String description, String perfume) {
       this.name = name;
       this.diameter = diameter;
       this.weight = weight;
       this.description = description;
+      this.perfume = perfume;
    }
 }
