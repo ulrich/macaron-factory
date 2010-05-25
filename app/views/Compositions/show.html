@@ -1,29 +1,18 @@
-#{extends 'main.html' /}
-#{set title:composition.name /}
+<h3>Detail de la composition</h3> 
 
-<h1>Voir composition</h1>
+<span>Nom: ${composition.name}</span><br/>
+<span>Description: ${composition.fullDescription}</span><br/>
+<span>Prix: ${composition.price}</span><br/>
 
-    <p>
-        <strong>Nom:</strong> ${composition.name}
-    </p>
-    <p>
-        <strong>Description:</strong> ${composition.fullDescription}
-    </p>
-    <p>
-        <strong>Nombre de pi&egrave;ce:</strong> ${composition.macaroonList}
-    </p>
+<br/>
 
-#{if composition.macaroonList == 0}
-    <p>
-        Cette composition est vide
-    </p>
-#{/if}
-#{else}
+<span>
+   Composee de :
    <ul>
-      #{list composition.macaroonList, as:'macaroon'}
-         <li>${macaroon.name}, ${macaroon.description}</li>
-      #{/list}
-   </ul> 
-#{/else}
-
-<a href="@{index()}">Retour aux compositions</a>      
+	   #{list items:composition.macaroonList, as:'macaroon'}
+         <li>
+            ${macaroon.name}
+         </li>
+	   #{/list}
+   </ul>
+</span>
