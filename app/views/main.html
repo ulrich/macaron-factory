@@ -41,12 +41,12 @@
          <table id="header" WIDTH="850px" CELLPADDING="0" CELLSPACING="0">
             <tr height="60px" align="center">
                <td>
-                  <A HREF="#" ONMOUSEOVER="window.status='home page'; changeImages('home_page', '@{'/public/images/home-page-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('home_page', '@{'/public/images/home-page.jpg'}'); return true;">
+                  <A HREF="@{Application.index}" ONMOUSEOVER="window.status='home page'; changeImages('home_page', '@{'/public/images/home-page-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('home_page', '@{'/public/images/home-page.jpg'}'); return true;">
                      <IMG NAME="home_page" SRC="@{'/public/images/home-page.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="home page" />
                   </A>
                </td>
                <td>
-                  <A HREF="#" ONMOUSEOVER="window.status='products'; changeImages('products', '@{'/public/images/products-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('products', '@{'/public/images/products.jpg'}'); return true;">
+                  <A HREF="@{Compositions.index}" ONMOUSEOVER="window.status='products'; changeImages('products', '@{'/public/images/products-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('products', '@{'/public/images/products.jpg'}'); return true;">
                      <IMG NAME="products" SRC="@{'/public/images/products.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="products" />
                   </A>
                </td>
