@@ -96,6 +96,8 @@
             </tr>
          </table>
 
+         <br/>
+
          <table>
             <tr>
                <td>
@@ -105,7 +107,7 @@
                            <table BORDER="0" CELLPADDING="5" CELLSPACING="0">
                               <tr>
                                  <td>
-		                              <span class="compositionShortDescriptionTitle" style="text-decoration: underline;">${composition.name}</span><br/><br/>
+		                              <span class="compositionShortDescriptionTitle">${composition.name}</span><br/><br/>
 		                              <span class="compositionFullDescription">${composition.fullDescription}</span><br/>
                                  </td>
                               </tr>
@@ -166,37 +168,51 @@
                            <img SRC="@{'/public/images/sr1.jpg'}" ALT="">
                         </td>
                         <td width="45%" valign="top">
-                           <table BORDER="0" CELLPADDING="5" CELLSPACING="0">
+                           <table BORDER="0" CELLPADDING="0" CELLSPACING="0">
                               <tr>
-                                 <span class="eventDate">${composition.name}</span>
-                                 <span>${composition.fullDescription}</span>
+                                 <span class="compositionShortDescriptionTitle">Nos compositions :</span>
                               </tr>
-                              #{if composition.macaroonList.size()}
+                              #{if compositions.size()}
                                  <tr>
-                                   #{list items:composition.macaroonList, as:'macaroon'}
-                                       <td>${macaroon.name}&nbsp;</td>
-                                   #{/list}
+                                    <td>
+                                       <div style="overflow: scroll; height: 250px; width: 400px">
+                                          <table>
+                                             <tr>
+                                                <td>
+                                                   #{list items:compositions, as:'composition'}
+                                                      <table>
+                                                         <tr onMouseOver="this.style.background='#f4f4f4'" onmouseout="this.style.background='#ffffff'" >
+                                                            <td align="left" valign="top">
+                                                               <img width="50px" height="50px" src="/public/images/${composition.picture}" title="${composition.shortDescription}">
+                                                            </td>
+                                                            <td align="left" valign="top">
+                                                               <span class="compositionShortDescriptionTitle">
+                                                                  ${composition.name}<br/>
+                                                               </span>
+                                                               <span class="compositionFullDescription">
+                                                                  ${composition.shortDescription}
+					                                                   <a href="@{Compositions.show(composition.id)}" class="a">
+					                                                      Voir le détail
+					                                                   </a>
+                                                               </span>
+                                                            </td>
+                                                         </tr>
+                                                      </table>
+                                                   #{/list}
+                                                </td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
                                  </tr>
                               #{/if}
                               #{else}
                                  <tr>
-                                    <td colspan="1" align="center">
-                                       Pas de macaron pour cette composition
+                                    <td align="center">
+                                       Pas de composition à afficher pour cette composition
                                     </td>
                                  </tr>
                               #{/else}
-                              <tr>
-                                 <span>${composition.price} EUR/25 macarons (500g)</span>
-                              </tr>
-                              <tr>
-                                 <span>
-                                    <select name="compositionNumber">
-                                       <option value="1">1 boite de 25 macarons</option>
-                                       <option value="2">2 boites de 50 macarons</option>
-                                    </select>
-                                    <IMG SRC="@{'/public/images/add-cart.jpg'}" ALT="" />
-                                 </span>
-                              </tr>
                            </table>
                         </td>
                      </tr>
