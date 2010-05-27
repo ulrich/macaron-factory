@@ -101,18 +101,18 @@
     <control controlID="31" controlTypeID="com.balsamiq.mockups::Paragraph" x="728" y="342" w="200" h="64" measuredW="200" measuredH="140" zOrder="19" locked="false" isInGroup="-1">
       <controlProperties>
         <size>9</size>
-        <text>This%20is%20the%20full%20description%20text.%0AAdded%20some%20informations...%0APrix%20%3A%2018%20EUR%20/%2025%20pce%20%28500kg%29%0A%5BVoir%20d%E9tail%5D</text>
+        <text>This%20is%20the%20full%20description%20text.%0AAdded%20some%20info...%20%5BVoir%20d%E9tail%5D</text>
       </controlProperties>
     </control>
-    <control controlID="32" controlTypeID="com.balsamiq.mockups::Image" x="677" y="412" w="42" h="30" measuredW="334" measuredH="233" zOrder="20" locked="false" isInGroup="-1">
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Image" x="677" y="386" w="42" h="30" measuredW="334" measuredH="233" zOrder="20" locked="false" isInGroup="-1">
       <controlProperties>
         <src>../images/m2.png</src>
       </controlProperties>
     </control>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::Paragraph" x="728" y="410" w="200" h="60" measuredW="200" measuredH="140" zOrder="21" locked="false" isInGroup="-1">
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Paragraph" x="728" y="384" w="200" h="60" measuredW="200" measuredH="140" zOrder="21" locked="false" isInGroup="-1">
       <controlProperties>
         <size>9</size>
-        <text>This%20is%20the%20full%20description%20text.%0AAdded%20some%20informations...%0APrix%20%3A%2018%20EUR%20/%2025%20pce%20%28500kg%29%0A%5BVoir%20d%E9tail%5D</text>
+        <text>This%20is%20the%20full%20description%20text.%0AAdded%20some%20info...%20%5BVoir%20d%E9tail%5D</text>
       </controlProperties>
     </control>
     <control controlID="34" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="901" y="339" w="-1" h="131" measuredW="16" measuredH="100" zOrder="22" locked="false" isInGroup="-1"/>
@@ -212,6 +212,17 @@
       <controlProperties>
         <borderStyle>none</borderStyle>
         <color>13421772</color>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Image" x="677" y="428" w="42" h="30" measuredW="334" measuredH="233" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../images/m2.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Paragraph" x="728" y="426" w="200" h="60" measuredW="200" measuredH="140" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>9</size>
+        <text>This%20is%20the%20full%20description%20text.%0AAdded%20some%20info...%20%5BVoir%20d%E9tail%5D</text>
       </controlProperties>
     </control>
   </controls>
