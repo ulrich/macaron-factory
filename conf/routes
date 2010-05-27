@@ -7,7 +7,7 @@ GET     /                                       Application.index
 GET     /older                                  Application.older
 GET     /compositions                           Compositions.index
 GET     /compositions/                          Compositions.index
-GET     /compositions/{id}                      Compositions.show
+GET     /compositions/{<[0-9]+>id}              Compositions.show
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public

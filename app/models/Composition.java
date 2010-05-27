@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 
 import play.data.validation.Required;
 import play.db.jpa.Model;
@@ -21,7 +21,7 @@ public class Composition extends Model {
    public float price;
    public String picture;
    public boolean highlighted;
-   @OneToMany
+   @ManyToMany
    public List<Macaroon> macaroonList;
 
    public Composition(String name, String shortDescription, String fullDescription, float price) {
@@ -38,6 +38,7 @@ public class Composition extends Model {
    }
 
    public static List<Composition> findHighlighted() {
-      return Composition.find("from Composition c where c.highlighted = true").fetch(1, 2);
+      // find the highlighted composition (two max)
+      return Composition.find("byHighlighted", true).fetch();
    }
 }
