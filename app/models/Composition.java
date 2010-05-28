@@ -39,6 +39,6 @@ public class Composition extends Model {
 
    public static List<Composition> findHighlighted() {
       // find the highlighted composition (two max)
-      return Composition.find("byHighlighted", true).fetch();
+      return Composition.find("byHighlighted", true).fetch(1, 2);
    }
 }
