@@ -1,0 +1,253 @@
+
+#### Macaroons entries
+
+Macaroon(menthePoivree):
+    name:           Macaron Menthe Poivrée
+    weight:         20f
+    diameter:       3.5f
+    picture:        cafe1.jpg
+    perfume:        Menthe Poivrée
+    description:    A définir
+
+Macaroon(kiwi):
+    name:           Macaron Kiwi
+    weight:         20f
+    diameter:       3.5f
+    picture:        kiwi1.jpg
+    perfume:        Kiwi
+    description:    A définir
+
+Macaroon(citron):
+    name:           Macaron Citron
+    weight:         20f
+    diameter:       3.5f
+    picture:        cafe1.jpg
+    perfume:        Citron
+    description:    A définir
+
+Macaroon(chocolat):
+    name:           Macaron Chocolat
+    weight:         20f
+    diameter:       3.5f
+    picture:        chocolat1.jpg
+    perfume:        Chocolat
+    description:    A définir
+
+Macaroon(chocolatNoir):
+    name:           Macaron Chocolat Noir
+    weight:         20f
+    diameter:       3.5f
+    picture:        chocolatNoir1.jpg
+    perfume:        Chocolat Noir
+    description:    A définir
+
+Macaroon(chocolatOrange):
+    name:           Macaron Chocolat-Orange
+    weight:         20f
+    diameter:       3.5f
+    picture:        cafe1.jpg
+    perfume:        Chocolat-Orange
+    description:    A définir
+
+Macaroon(vanille):
+    name:           Macaron Vanille
+    weight:         20f
+    diameter:       3.5f
+    picture:        vanille1.jpg
+    perfume:        Vanille
+    description:    A définir
+
+Macaroon(fraise):
+    name:           Macaron Fraise
+    weight:         20f
+    diameter:       3.5f
+    picture:        fraise1.jpg
+    perfume:        Fraise
+    description:    A définir
+
+Macaroon(pistache):
+    name:           Macaron Pistache
+    weight:         20f
+    diameter:       3.5f
+    picture:        pistache1.jpg
+    perfume:        Pistache
+    description:    A définir
+
+Macaroon(citronVert):
+    name:           Macaron Citron Vert
+    weight:         20f
+    diameter:       3.5f
+    picture:        citronVert1.jpg
+    perfume:        Citron Vert
+    description:    A définir
+
+Macaroon(noisette):
+    name:           Macaron Noisette
+    weight:         20f
+    diameter:       3.5f
+    picture:        noisette1.jpg
+    perfume:        Noisette
+    description:    A définir
+
+Macaroon(myrtille):
+    name:           Macaron Myrtille
+    weight:         20f
+    diameter:       3.5f
+    picture:        myrtille1.jpg
+    perfume:        Myrtille
+    description:    A définir
+
+Macaroon(framboise):
+    name:           Macaron Framboise
+    weight:         20f
+    diameter:       3.5f
+    picture:        framboise1.jpg
+    perfume:        Framboise
+    description:    A définir
+
+Macaroon(cerise):
+    name:           Macaron Cerise
+    weight:         20f
+    diameter:       3.5f
+    picture:        cerise1.jpg
+    perfume:        Cerise
+    description:    A définir
+
+Macaroon(noixDeCoco):
+    name:           Macaron Noix De Coco
+    weight:         20f
+    diameter:       3.5f
+    picture:        noixDeCoco1.jpg
+    perfume:        Noix de Coco
+    description:    A définir
+
+Macaroon(mangue):
+    name:           Macaron Mangue
+    weight:         20f
+    diameter:       3.5f
+    picture:        mangue1.jpg
+    perfume:        Mangue
+    description:    A définir
+
+Macaroon(menthe):
+    name:           Macaron Menthe
+    weight:         20f
+    diameter:       3.5f
+    picture:        menthe1.jpg
+    perfume:        Menthe
+    description:    A définir
+
+Macaroon(ananas):
+    name:           Macaron Ananas
+    weight:         20f
+    diameter:       3.5f
+    picture:        ananas1.jpg
+    perfume:        Ananas
+    description:    A définir
+
+Macaroon(orange):
+    name:           Macaron Orange
+    weight:         20f
+    diameter:       3.5f
+    picture:        orange1.jpg
+    perfume:        Orange
+    description:    A définir
+
+Macaroon(reglisse):
+    name:           Macaron Réglisse
+    weight:         20f
+    diameter:       3.5f
+    picture:        reglisse1.jpg
+    perfume:        Réglisse
+    description:    A définir
+
+Macaroon(cafe):
+    name:           Macaron Café
+    weight:         20f
+    diameter:       3.5f
+    picture:        cafe1.jpg
+    perfume:        Café
+    description:    A définir
+
+Macaroon(speculos):
+    name:           Macaron Spéculos
+    weight:         20f
+    diameter:       3.5f
+    picture:        speculos1.jpg
+    perfume:        Spéculos
+    description:    A définir
+
+Macaroon(mure):
+    name:           Macaron Mûre
+    weight:         20f
+    diameter:       3.5f
+    picture:        mure1.jpg
+    perfume:        Mûre
+    description:    A définir
+
+#### Compositions entries
+
+Composition(angelina):
+   name:                L'Angélina
+   shortDescription:    Composée de macarons raffinés pour vous accompagner à l'heure du thé.
+   fullDescription:     Cette composition raffinée se marie parfaitement avec un thé fruité ou primeur. Elle est composée de macarons fruités aux parfums Mangue, Ananas, Kiwi, Cerise, Mure.
+   macaroonList:        [chocolat, pistache, vanille, fraise, citron]
+   picture:             sr4.jpg
+   highlighted:         false
+   price:               17f
+
+Composition(astrid):
+   name:                L'Astrid
+   shortDescription:    Composée de macarons de caractères pour accompagner tous vos desserts.
+   fullDescription:     Cette composition de caractère est une avalanche de saveurs fruitées mélées au raffinement d'un chocolat d'exception. Elle est composée de macarons classiques aux parfums Chocolat Noisettes, Pistache Amande, Orange, Framboise et Noix De Coco.
+   macaroonList:        [chocolat, pistache, orange, framboise, noixDeCoco]
+   picture:             sr3.jpg
+   highlighted:         true
+   price:               18f
+
+Composition(anais):
+   name:                L'Anaïs
+   shortDescription:    Composée de macarons de caractères pour amateurs de chocolat.
+   fullDescription:     Cette composition relevée se déguste avec un café. Elle est composée de macarons aux parfums osés comme aux Café, Chocolat Noir, Menthe Poivrée, Citron, Chocolat-Orange.
+   macaroonList:        [cafe, chocolatNoir, menthePoivree, citron, chocolatOrange]
+   picture:             sr4.jpg
+   highlighted:         true
+   price:               16f
+
+Composition(agnes):
+   name:                L'Agnès
+   shortDescription:    Composée de macarons aux saveurs exotiques, idéal pour voyager.
+   fullDescription:     Cette composition aux doux parfums exotique est composée de macarons aux parfums Mangue, Ananas, Kiwi, Cerise, Mure.
+   macaroonList:        [mangue, ananas, kiwi, cerise, mure]
+   picture:             sr4.jpg
+   highlighted:         false
+   price:               18f
+
+Composition(ambre):
+   name:                L'Ambre
+   shortDescription:    Composée de macarons aux saveurs esquises, idéal pour voyager.
+   fullDescription:     Cette composition aux doux parfums exotique est composée de macarons aux parfums Noisette, Speculos, Orange, Chocolat, Café.
+   macaroonList:        [noisette, speculos, orange, chocolat, cafe]
+   picture:             sr4.jpg
+   highlighted:         false
+   price:               20f
+
+#### Events entries
+
+Event(juneEvent1):
+   date:          2010-06-15
+   description:   Macaron-Factory prépare une grosse commande en vue d'un mariage pour juin 2010 !
+
+Event(mayEvent1):
+   date:          2010-05-05
+#  description:   Venez découvrir notre nouvelle composition fruitée portée par un chocolat doux : <a href=\"#\" class=\"a\">Angèle</a>.
+   description:   Venez découvrir notre nouvelle composition fruitée portée par un chocolat doux, Angele
+
+Event(aprilEvent2):
+   date:          2010-04-23
+#  description:   Soyez les premiers à être informés sur nos créations et évenements sur <a href=\"http://twitter.com/macaronfactory\" class=\"a\" target=\"_blank\">Twitter</a>.
+   description:   Soyez les premiers à être informés sur nos créations et évenements sur Twitter !
+
+Event(aprilEvent1):
+   date:          2010-04-01
+   description:   Macaron-Factory est racheter par Coca Cola !

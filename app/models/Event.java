@@ -2,14 +2,17 @@ package models;
 
 import java.util.Date;
 
-import javax.persistence.Entity;
-
 import play.data.validation.MaxSize;
 import play.data.validation.Required;
-import play.db.jpa.Model;
+import siena.Id;
+import siena.Model;
+import siena.Query;
+import siena.Table;
 
-@Entity
+@Table("event")
 public class Event extends Model {
+   @Id
+   public Long id;
    @Required
    public Date date;
    @Required
@@ -19,5 +22,9 @@ public class Event extends Model {
    public Event(Date date, String description) {
       this.date = date;
       this.description = description;
+   }
+
+   public static Query<Event> all() {
+      return Model.all(Event.class);
    }
 }

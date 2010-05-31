@@ -3,14 +3,14 @@ package models;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-
 import play.data.validation.Required;
-import play.db.jpa.Model;
+import siena.Id;
+import siena.Model;
+import siena.Query;
 
-@Entity
 public class Composition extends Model {
+   @Id
+   public Long id;
    @Required
    public String name;
    @Required
@@ -21,7 +21,6 @@ public class Composition extends Model {
    public float price;
    public String picture;
    public boolean highlighted;
-   @ManyToMany
    public List<Macaroon> macaroonList;
 
    public Composition(String name, String shortDescription, String fullDescription, float price) {
@@ -37,8 +36,12 @@ public class Composition extends Model {
       macaroon.composition.add(this);
    }
 
+   // find the highlighted composition (two max)
    public static List<Composition> findHighlighted() {
-      // find the highlighted composition (two max)
-      return Composition.find("byHighlighted", true).fetch(1, 2);
+      return all().filter("highlighted", true).fetch(1, 2);
+   }
+
+   public static Query<Composition> all() {
+      return Model.all(Composition.class);
    }
 }

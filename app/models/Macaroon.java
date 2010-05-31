@@ -3,14 +3,14 @@ package models;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-
 import play.data.validation.Required;
-import play.db.jpa.Model;
+import siena.Id;
+import siena.Model;
+import siena.Query;
 
-@Entity
 public class Macaroon extends Model {
+   @Id
+   public Long id;
    @Required
    public String name;
    @Required
@@ -22,7 +22,6 @@ public class Macaroon extends Model {
    @Required
    public String perfume;
    public String picture;
-   @ManyToMany
    public List<Composition> composition = new ArrayList<Composition>();
 
    public Macaroon(String name, float weight, float diameter, String description, String perfume) {
@@ -31,5 +30,9 @@ public class Macaroon extends Model {
       this.weight = weight;
       this.description = description;
       this.perfume = perfume;
+   }
+
+   public static Query<Macaroon> all() {
+      return Model.all(Macaroon.class);
    }
 }
