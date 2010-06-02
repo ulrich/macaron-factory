@@ -1,12 +1,12 @@
-<HTML>
-   <HEAD>
-      <TITLE>Bienvenue chez Macaron-Factory</TITLE>
-      <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
-      <SCRIPT TYPE="text/javascript">
+<html>
+   <head>
+      <title>Bienvenue chez Macaron-Factory</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <script TYPE="text/javascript">
          <!--
          function newImage(arg) {
             if (document.images) {
-        	   rslt = new Image();
+            rslt = new Image();
                rslt.src = arg;
                return rslt;
             }
@@ -31,185 +31,91 @@
             }
          }
          // -->
-      </SCRIPT>
+      </script>
       <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/mf.css'}">
-   </HEAD>
+   </head>
 
-   <BODY BGCOLOR=#FFFFFF LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" ONLOAD="preloadImages();">
-      <CENTER>
-         <!-- header -->
-         <table id="header" WIDTH="850px" CELLPADDING="0" CELLSPACING="0">
-            <tr height="60px" align="center">
-               <td>
-                  <A HREF="@{Application.index}" onmouseover="window.status='home page'; changeImages('home_page', '@{'/public/images/home-page-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('home_page', '@{'/public/images/home-page.jpg'}'); return true;">
-                     <IMG NAME="home_page" SRC="@{'/public/images/home-page.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="home page" />
-                  </A>
-               </td>
-               <td>
-                  <A HREF="@{Compositions.index}" ONMOUSEOVER="window.status='products'; changeImages('products', '@{'/public/images/products-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('products', '@{'/public/images/products.jpg'}'); return true;">
-                     <IMG NAME="products" SRC="@{'/public/images/products.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="products" />
-                  </A>
-               </td>
-               <td>
-                  <A HREF="@{About.index}" ONMOUSEOVER="window.status='about us'; changeImages('about_us', '@{'/public/images/about-us-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('about_us', '@{'/public/images/about-us.jpg'}'); return true;">
-                     <IMG NAME="about_us" SRC="@{'/public/images/about-us.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="about us">
-                  </A>
-               </td>
-               <td>
-                  <A HREF="#" ONMOUSEOVER="window.status='contacts'; changeImages('contacts', '@{'/public/images/contacts-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('contacts', '@{'/public/images/contacts.jpg'}'); return true;">
-                     <IMG NAME="contacts" SRC="@{'/public/images/contacts.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="contacts"/>
-                  </A>
-               </td>
-            </tr>
-         </table>
-
-         <table id="main" WIDTH="850px" BORDER="0" CELLPADDING="0" CELLSPACING="0">
-            <tr id="title" align="center">
-               <td>
-                  <table WIDTH="780px" BORDER="0" CELLPADDING="0" CELLSPACING="0">
-                     <tr>
-                        <td>
-                           <IMG SRC="@{'/public/images/m2.jpg'}" WIDTH="425" HEIGHT="228" ALT=""/>
-                        </td>
-                        <td>
-                           <table width="350px">
-                              <tr>
-                                 <td width="300px">
-                                    <IMG SRC="@{'/public/images/m3.jpg'}" WIDTH=350 HEIGHT=120 ALT=""/>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td class="text2" width="300px">
-                                    <span class="text3">Imaginez une farandole de macarons,</span> aux parfums des plus classiques aux plus insolites. Notre gamme s'étend sur plus de trente variétés de produits différents. Le macaron étant pour nous une passion, nous nous efforçons de produire un met de qualité et investissons dans le meilleur de la matière première.<br/>
-                                 </td>
-                              </tr>
-                              <tr>
-                                 <td width="300px">
-                                    <a href="#" class="a">En savoir plus</a>
-                                 </td>
-                              </tr>
-                           </table>
-                        </td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-         </table>
-
-         <table>
-            <tr>
-               <td>
-                  <table WIDTH="850px" BORDER="0" CELLPADDING="5" CELLSPACING="0">
-                     <tr>
-                        <td width="25%" valign="top">
-                           <table BORDER="0" CELLPADDING="5" CELLSPACING="0">
-                              <tr>
-                                 <th colspan="3">
-                                    <IMG SRC="@{'/public/images/nw1.jpg'}" WIDTH="250" HEIGHT="35" ALT=""/>
-                                 </th>
-                              </tr>
-                              #{if events.size()}
-	                              <!-- begin of events loop -->
-	                              #{list items:events, as:'event'}
-	                                 <tr id="event">
-	                                    <td width="20%" align="right" valign="top" >
-	                                       <IMG SRC="@{'/public/images/dot-grey.jpg'}" ALT=""/>
-	                                    </td>
-	                                    <td width="60%" align="left">
-	                                       <span class="eventDate">${event.date.format("dd-MM-yyyy")}</span><br/>
-                                          <span class="eventDescription">${event.description}</span><br/>
-	                                    </td>
-	                                    <td width="20%">
-	                                       <IMG SRC="@{'/public/images/spacer.gif'}" ALT="">
-	                                    </td>
-	                                 </tr>
-	                              #{/list}
-	                              <!-- end of events loop -->
-		                           <tr>
-		                              <td colspan="3" align="right">
-		                                 <a href="#" class="a">Plus d'événements</a>
-		                              </td>
-		                           </tr>
-                              #{/if}
-                              #{else}
+   <body>
+      <center>
+         <div id="header">
+            <table width="850px" cellpadding="0" cellspacing="0">
+               <tr height="60px" align="center">
+                  <td>
+                     <a href="@{Application.index}" onmouseover="window.status='home page'; changeImages('home_page', '@{'/public/images/home-page-over.jpg'}'); return true;" onmouseout="window.status=''; changeImages('home_page', '@{'/public/images/home-page.jpg'}'); return true;">
+                        <img name="home_page" src="@{'/public/images/home-page.jpg'}" width="95px" height="40px" border="0px" alt="Accueil" />
+                     </a>
+                  </td>
+                  <td>
+                     <a href="@{Compositions.index}" onmouseover="window.status='products'; changeImages('products', '@{'/public/images/products-over.jpg'}'); return true;" onmouseout="window.status=''; changeImages('products', '@{'/public/images/products.jpg'}'); return true;">
+                        <img name="products" src="@{'/public/images/products.jpg'}" width="95px" height="40px" border="0px" alt="Produits" />
+                     </a>
+                  </td>
+                  <td>
+                     <a href="@{About.index}" onmouseover="window.status='about us'; changeImages('about_us', '@{'/public/images/about-us-over.jpg'}'); return true;" onmouseout="window.status=''; changeImages('about_us', '@{'/public/images/about-us.jpg'}'); return true;">
+                        <IMG NAME="about_us" src="@{'/public/images/about-us.jpg'}" width="95px" height="40px" border="0px" alt="A propos">
+                     </a>
+                  </td>
+                  <td>
+                     <a href="@{Contact.index}" onmouseover="window.status='contacts'; changeImages('contacts', '@{'/public/images/contacts-over.jpg'}'); return true;" onmouseout="window.status=''; changeImages('contacts', '@{'/public/images/contacts.jpg'}'); return true;">
+                        <img name="contacts" src="@{'/public/images/contacts.jpg'}" width="95px" height="40px" border="0px" alt="Contact"/>
+                     </a>
+                  </td>
+               </tr>
+            </table>
+   
+            <table id="main" width="850px" border="0" cellpadding="0" cellspacing="0">
+               <tr id="title" align="center">
+                  <td>
+                     <table width="780px" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                           <td>
+                              <img src="@{'/public/images/m2.jpg'}" width="425px" height="228px" alt=""/>
+                           </td>
+                           <td>
+                              <table width="350px">
                                  <tr>
-                                    <td colspan="3" align="center">
-                                       Pas d'événement à afficher
+                                    <td width="300px">
+                                       <img src="@{'/public/images/m3.jpg'}" width="350px" height="120px" alt=""/>
                                     </td>
                                  </tr>
-                              #{/else}
-                           </table>
-                        </td>
-                        <td width="5%">
-                           <img SRC="@{'/public/images/sr1.jpg'}" ALT="">
-                        </td>
-                        <td width="70%" valign="top">
-                           <table BORDER="0" CELLPADDING="5" CELLSPACING="0">
-                              <!-- display 2 randomized compositions -->
-                              <tr>
-                                 <th colspan="2">
-                                    <IMG SRC="@{'/public/images/sr2.jpg'}" ALT="" />
-                                 </th>
-                              </tr>
-                              <tr>
-                                 #{if compositions.size()}
-                                    <!-- begin of composition loop -->
-                                    #{list items:compositions, as:'composition'}
-		                                 <td id="composition" width="50%px" valign="top">
-		                                    <table border="0" width="100%" height="100%" cellpadding="5px">
-		                                       <tr height="80%" valign="top">
-		                                          <td valign="top">
-                                                   <img src="/public/images/${composition.picture}" title="${composition.shortDescription}" align="left">
-		                                             <span class="compositionShortDescriptionTitle">${composition.name}</span><br/>
-		                                             <span class="compositionFullDescription">${composition.fullDescription}</span>
-		                                          </td>
-		                                       </tr>
-		                                       <tr height="10%" valign="top">
-		                                          <td>
-		                                             <span class="compositionPrice">Prix: ${composition.price} EUR/25 macarons (500g)</span>
-		                                          </td>
-		                                       </tr>
-		                                       <tr height="10%" valign="top">
-		                                          <td>
-		                                             <a href="@{Compositions.show(composition.id)}" class="a">
-		                                                Voir le détail
-		                                             </a>
-		                                          </td>
-		                                       </tr>
-		                                    </table>
-		                                 </td>
-                                    #{/list}
-                                    <!-- end of composition loop -->
-                                 #{/if}
-                                 #{else}
-	                                 <tr>
-	                                    <td colspan="3" align="center">
-	                                       Pas de composition à afficher
-	                                    </td>
-	                                 </tr>
-                                 #{/else}
-                              </tr>
-                           </table>
-                        </td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-         </table>
+                                 <tr>
+                                    <td class="text2" width="300px">
+                                       <span class="text3">Imaginez une farandole de macarons,</span> aux parfums des plus classiques aux plus insolites. Notre gamme s'&eacute;tend sur plus de trente vari&eacute;t&eacute;s de produits diff&eacute;rents. Le macaron &eacute;tant pour nous une passion, nous nous efforçons de produire un met de qualit&eacute; et investissons dans le meilleur de la mati&egrave;re premi&egrave;re.<br/>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td width="300px">
+                                       <a href="#" class="a">En savoir plus</a>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+         </div>
 
-         <table WIDTH="850px" BORDER="0" CELLPADDING="5" CELLSPACING="0">
-            <tr>
-               <td HEIGHT="40" align="center" valign="middle" BGCOLOR=#979076 class="text4">
-                  <a href="#">Accueil</a> |
-                  <a href="#">Produits</a> |
-                  <a href="#">A Propos</a> |
-                  <a href="#">Nous contacter</a>
-               </td>
-            </tr>
-            <tr align="center">
-               <td>Copyright © Macaron Factory</td>
-            </tr>
-         </table>
+         <div id="content">
+            #{doLayout /} 
+         </div>
+
+         <div id="footer">
+            <table width="850px" border="0px" cellpadding="5px" cellspacing="0px">
+               <tr>
+                  <td height="40px" align="center" valign="middle" bgcolor=#979076 class="text4">
+                     <a href="@{Application.index}">Accueil</a> |
+                     <a href="@{Compositions.index}">Produits</a> |
+                     <a href="@{About.index}">A Propos</a> |
+                     <a href="#">Nous contacter</a>
+                  </td>
+               </tr>
+               <tr align="center">
+                  <td>Copyright © Macaron Factory</td>
+               </tr>
+            </table>
+         </div>
       </center>
-   </BODY>
-</HTML>
+   </body>
+</html>
