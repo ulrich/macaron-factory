@@ -14,4 +14,4 @@ GET     /contact                                Contact.index
 GET     /public/                                staticDir:public
 
 # Catch all
-*       /{controller}/{action}                  {controller}.{action}
+*       /{controller}/{action}                  Application.index

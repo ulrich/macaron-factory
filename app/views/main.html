@@ -33,6 +33,16 @@
          // -->
       </script>
       <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/mf.css'}">
+
+      <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+      <script>
+         $(document).ready(function() {
+            $("#dialog").hide();
+         });
+      </script>
    </head>
 
    <body>
@@ -85,7 +95,7 @@
                                  </tr>
                                  <tr>
                                     <td width="300px">
-                                       <a href="#" class="a">En savoir plus</a>
+                                       <a href="@{About.index}" class="a">En savoir plus</a>
                                     </td>
                                  </tr>
                               </table>

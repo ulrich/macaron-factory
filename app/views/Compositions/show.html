@@ -59,7 +59,7 @@
                               <tr>
                                  <td>
                                     <div>
-                                       <a href="#">
+                                       <a href="#" onmousedown="$(document).ready(function() {$('#dialog').dialog({modal: true}, {width: 460});});">
                                           <img class="showCompositionAddCart" SRC="@{'/public/images/add-cart.jpg'}" ALT="" />
                                        </a>
                                     </div>
@@ -123,3 +123,8 @@
                </td>
             </tr>
          </table>
+
+         <div id="dialog" title="Macaron-Factory" style="font-size: 14px; font-size:12px;">
+            La commande par Internet sera disponible prochainement !<br/><br/>
+            Vous pouvez n&eacute;anmoins commander par email ou par t&eacute;l&eacute;phone via la page <a href="@{Contact.index}" class="a">Contact</a>
+         </div>
