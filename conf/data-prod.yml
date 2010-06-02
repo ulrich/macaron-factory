@@ -194,7 +194,7 @@ Composition(angelina):
    macaroonList:        [chocolat, pistache, vanille, fraise, citron]
    picture:             sr4.jpg
    highlighted:         false
-   price:               17f
+   price:               21f
 
 Composition(astrid):
    name:                L'Astrid
@@ -203,7 +203,7 @@ Composition(astrid):
    macaroonList:        [chocolat, pistache, orange, framboise, noixDeCoco]
    picture:             sr3.jpg
    highlighted:         true
-   price:               18f
+   price:               21f
 
 Composition(anais):
    name:                L'Anaïs
@@ -212,7 +212,7 @@ Composition(anais):
    macaroonList:        [cafe, chocolatNoir, menthePoivree, citron, chocolatOrange]
    picture:             sr4.jpg
    highlighted:         true
-   price:               16f
+   price:               21f
 
 Composition(agnes):
    name:                L'Agnès
@@ -221,7 +221,7 @@ Composition(agnes):
    macaroonList:        [mangue, ananas, kiwi, cerise, mure]
    picture:             sr4.jpg
    highlighted:         false
-   price:               18f
+   price:               21f
 
 Composition(ambre):
    name:                L'Ambre
@@ -230,18 +230,18 @@ Composition(ambre):
    macaroonList:        [noisette, speculos, orange, chocolat, cafe]
    picture:             sr4.jpg
    highlighted:         false
-   price:               20f
+   price:               21f
 
 #### Events entries
 
 Event(juneEvent1):
-   date:          2010-06-15
+   date:          2010-06-01
    description:   Macaron-Factory prépare une grosse commande en vue d'un mariage pour juin 2010 !
 
 Event(mayEvent1):
    date:          2010-05-05
 #  description:   Venez découvrir notre nouvelle composition fruitée portée par un chocolat doux : <a href=\"#\" class=\"a\">Angèle</a>.
-   description:   Venez découvrir notre nouvelle composition fruitée portée par un chocolat doux, Angele
+   description:   Venez découvrir notre nouvelle composition fruitée portée nommée Angèle
 
 Event(aprilEvent2):
    date:          2010-04-23

@@ -15,8 +15,4 @@ public class Application extends Controller {
       List<Composition> compositions = Composition.findHighlighted();
       render(events, compositions);
    }
-
-   public static void older() {
-      render("main2.html");
-   }
 }

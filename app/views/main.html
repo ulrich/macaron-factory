@@ -41,7 +41,7 @@
          <table id="header" WIDTH="850px" CELLPADDING="0" CELLSPACING="0">
             <tr height="60px" align="center">
                <td>
-                  <A HREF="@{Application.index}" ONMOUSEOVER="window.status='home page'; changeImages('home_page', '@{'/public/images/home-page-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('home_page', '@{'/public/images/home-page.jpg'}'); return true;">
+                  <A HREF="@{Application.index}" onmouseover="window.status='home page'; changeImages('home_page', '@{'/public/images/home-page-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('home_page', '@{'/public/images/home-page.jpg'}'); return true;">
                      <IMG NAME="home_page" SRC="@{'/public/images/home-page.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="home page" />
                   </A>
                </td>
@@ -51,7 +51,7 @@
                   </A>
                </td>
                <td>
-                  <A HREF="#" ONMOUSEOVER="window.status='about us'; changeImages('about_us', '@{'/public/images/about-us-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('about_us', '@{'/public/images/about-us.jpg'}'); return true;">
+                  <A HREF="@{About.index}" ONMOUSEOVER="window.status='about us'; changeImages('about_us', '@{'/public/images/about-us-over.jpg'}'); return true;" ONMOUSEOUT="window.status=''; changeImages('about_us', '@{'/public/images/about-us.jpg'}'); return true;">
                      <IMG NAME="about_us" SRC="@{'/public/images/about-us.jpg'}" WIDTH=95 HEIGHT=40 BORDER="0" ALT="about us">
                   </A>
                </td>
