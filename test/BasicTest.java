@@ -76,12 +76,12 @@ public class BasicTest extends UnitTest {
       Fixtures.load("data-test.yml");
 
       // finding a composition
-      Composition smallMacComposition = Composition.find("name", "Angelina").first();
+      Composition smallMacComposition = Composition.find("name", "L'Angélina").first();
       assertNotNull(smallMacComposition);
 
       // finding and adding small mac in this composition
       List<Macaroon> smallMacaroonList = Macaroon.find("from Macaroon where weight = :weight").query.setParameter("weight", 20f).getResultList();
-      assertEquals(3, smallMacaroonList.size());
+      assertEquals(23, smallMacaroonList.size());
       for (Macaroon macaroon : smallMacaroonList) {
          smallMacComposition.addMacaroon(macaroon);
       }
