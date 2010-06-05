@@ -5,9 +5,9 @@ Macaroon(menthePoivree):
     name:           Macaron Menthe Poivrée
     weight:         20f
     diameter:       3.5f
-    picture:        cafe1.jpg
+    picture:        menthePoivree.jpg
     perfume:        Menthe Poivrée
-    description:    A définir
+    description:    
 
 Macaroon(kiwi):
     name:           Macaron Kiwi
@@ -15,15 +15,15 @@ Macaroon(kiwi):
     diameter:       3.5f
     picture:        kiwi1.jpg
     perfume:        Kiwi
-    description:    A définir
+    description:    
 
 Macaroon(citron):
     name:           Macaron Citron
     weight:         20f
     diameter:       3.5f
-    picture:        cafe1.jpg
+    picture:        citron1.jpg
     perfume:        Citron
-    description:    A définir
+    description:    
 
 Macaroon(chocolat):
     name:           Macaron Chocolat
@@ -31,7 +31,7 @@ Macaroon(chocolat):
     diameter:       3.5f
     picture:        chocolat1.jpg
     perfume:        Chocolat
-    description:    A définir
+    description:    
 
 Macaroon(chocolatNoir):
     name:           Macaron Chocolat Noir
@@ -39,15 +39,15 @@ Macaroon(chocolatNoir):
     diameter:       3.5f
     picture:        chocolatNoir1.jpg
     perfume:        Chocolat Noir
-    description:    A définir
+    description:    
 
 Macaroon(chocolatOrange):
     name:           Macaron Chocolat-Orange
     weight:         20f
     diameter:       3.5f
-    picture:        cafe1.jpg
+    picture:        chocolat1.jpg
     perfume:        Chocolat-Orange
-    description:    A définir
+    description:    
 
 Macaroon(vanille):
     name:           Macaron Vanille
@@ -55,7 +55,7 @@ Macaroon(vanille):
     diameter:       3.5f
     picture:        vanille1.jpg
     perfume:        Vanille
-    description:    A définir
+    description:    
 
 Macaroon(fraise):
     name:           Macaron Fraise
@@ -63,7 +63,7 @@ Macaroon(fraise):
     diameter:       3.5f
     picture:        fraise1.jpg
     perfume:        Fraise
-    description:    A définir
+    description:    
 
 Macaroon(pistache):
     name:           Macaron Pistache
@@ -71,7 +71,7 @@ Macaroon(pistache):
     diameter:       3.5f
     picture:        pistache1.jpg
     perfume:        Pistache
-    description:    A définir
+    description:    
 
 Macaroon(citronVert):
     name:           Macaron Citron Vert
@@ -79,7 +79,7 @@ Macaroon(citronVert):
     diameter:       3.5f
     picture:        citronVert1.jpg
     perfume:        Citron Vert
-    description:    A définir
+    description:    
 
 Macaroon(noisette):
     name:           Macaron Noisette
@@ -87,7 +87,7 @@ Macaroon(noisette):
     diameter:       3.5f
     picture:        noisette1.jpg
     perfume:        Noisette
-    description:    A définir
+    description:    
 
 Macaroon(myrtille):
     name:           Macaron Myrtille
@@ -95,7 +95,7 @@ Macaroon(myrtille):
     diameter:       3.5f
     picture:        myrtille1.jpg
     perfume:        Myrtille
-    description:    A définir
+    description:    
 
 Macaroon(framboise):
     name:           Macaron Framboise
@@ -103,7 +103,7 @@ Macaroon(framboise):
     diameter:       3.5f
     picture:        framboise1.jpg
     perfume:        Framboise
-    description:    A définir
+    description:    
 
 Macaroon(cerise):
     name:           Macaron Cerise
@@ -111,7 +111,7 @@ Macaroon(cerise):
     diameter:       3.5f
     picture:        cerise1.jpg
     perfume:        Cerise
-    description:    A définir
+    description:    
 
 Macaroon(noixDeCoco):
     name:           Macaron Noix De Coco
@@ -119,7 +119,7 @@ Macaroon(noixDeCoco):
     diameter:       3.5f
     picture:        noixDeCoco1.jpg
     perfume:        Noix de Coco
-    description:    A définir
+    description:    
 
 Macaroon(mangue):
     name:           Macaron Mangue
@@ -127,7 +127,7 @@ Macaroon(mangue):
     diameter:       3.5f
     picture:        mangue1.jpg
     perfume:        Mangue
-    description:    A définir
+    description:    
 
 Macaroon(menthe):
     name:           Macaron Menthe
@@ -135,7 +135,7 @@ Macaroon(menthe):
     diameter:       3.5f
     picture:        menthe1.jpg
     perfume:        Menthe
-    description:    A définir
+    description:    
 
 Macaroon(ananas):
     name:           Macaron Ananas
@@ -143,7 +143,7 @@ Macaroon(ananas):
     diameter:       3.5f
     picture:        ananas1.jpg
     perfume:        Ananas
-    description:    A définir
+    description:    
 
 Macaroon(orange):
     name:           Macaron Orange
@@ -151,7 +151,7 @@ Macaroon(orange):
     diameter:       3.5f
     picture:        orange1.jpg
     perfume:        Orange
-    description:    A définir
+    description:    
 
 Macaroon(reglisse):
     name:           Macaron Réglisse
@@ -159,7 +159,7 @@ Macaroon(reglisse):
     diameter:       3.5f
     picture:        reglisse1.jpg
     perfume:        Réglisse
-    description:    A définir
+    description:    
 
 Macaroon(cafe):
     name:           Macaron Café
@@ -167,7 +167,7 @@ Macaroon(cafe):
     diameter:       3.5f
     picture:        cafe1.jpg
     perfume:        Café
-    description:    A définir
+    description:    
 
 Macaroon(speculos):
     name:           Macaron Spéculos
@@ -175,7 +175,7 @@ Macaroon(speculos):
     diameter:       3.5f
     picture:        speculos1.jpg
     perfume:        Spéculos
-    description:    A définir
+    description:    
 
 Macaroon(mure):
     name:           Macaron Mûre
@@ -183,54 +183,54 @@ Macaroon(mure):
     diameter:       3.5f
     picture:        mure1.jpg
     perfume:        Mûre
-    description:    A définir
+    description:    
 
 #### Compositions entries
 
 Composition(angelina):
    name:                L'Angélina
-   shortDescription:    Composée de macarons raffinés pour vous accompagner à l'heure du thé.
+   shortDescription:    Cette composition raffinée se marie parfaitement avec un thé fruité ou primeur. Elle est composée de macarons fruités aux parfums Chocolat, Pistache, Vanille, Fraise, Citron.
    fullDescription:     Cette composition raffinée se marie parfaitement avec un thé fruité ou primeur. Elle est composée de macarons fruités aux parfums Chocolat, Pistache, Vanille, Fraise, Citron.
    macaroonList:        [chocolat, pistache, vanille, fraise, citron]
    picture:             angelina.jpg
    highlighted:         false
-   price:               21f
+   price:               21.00f
 
 Composition(astrid):
    name:                L'Astrid
-   shortDescription:    Composée de macarons de caractères pour accompagner tous vos desserts.
+   shortDescription:    Cette composition de caractère est une avalanche de saveurs fruitées mélées au raffinement d'un chocolat d'exception. Elle est composée de macarons classiques aux parfums Chocolat Noisettes, Pistache Amande, Orange, Framboise et Noix De Coco.
    fullDescription:     Cette composition de caractère est une avalanche de saveurs fruitées mélées au raffinement d'un chocolat d'exception. Elle est composée de macarons classiques aux parfums Chocolat Noisettes, Pistache Amande, Orange, Framboise et Noix De Coco.
-   macaroonList:        [chocolat, pistache, orange, framboise, noixDeCoco]
+   macaroonList:        [noixDeCoco, orange, chocolat, framboise, pistache]
    picture:             astrid.jpg
    highlighted:         true
-   price:               21f
+   price:               21.00f
 
 Composition(anais):
    name:                L'Anaïs
-   shortDescription:    Composée de macarons de caractères pour amateurs de chocolat.
-   fullDescription:     Cette composition relevée se déguste avec un café. Elle est composée de macarons aux parfums osés comme aux Café, Chocolat Noir, Menthe Poivrée, Citron, Chocolat-Orange.
+   shortDescription:    Cette composition relevée se déguste avec un café. Elle est composée de macarons aux parfums osés comme Café, Chocolat Noir, Menthe Poivrée, Citron, Chocolat-Orange.
+   fullDescription:     Cette composition relevée se déguste avec un café. Elle est composée de macarons aux parfums osés comme Café, Chocolat Noir, Menthe Poivrée, Citron, Chocolat-Orange.
    macaroonList:        [cafe, chocolatNoir, menthePoivree, citron, chocolatOrange]
    picture:             anais.jpg
    highlighted:         true
-   price:               21f
+   price:               21.00f
 
 Composition(agnes):
    name:                L'Agnès
-   shortDescription:    Composée de macarons aux saveurs exotiques, idéal pour voyager.
+   shortDescription:    Cette composition aux doux parfums exotique est composée de macarons aux parfums Mangue, Ananas, Kiwi, Cerise, Mure.
    fullDescription:     Cette composition aux doux parfums exotique est composée de macarons aux parfums Mangue, Ananas, Kiwi, Cerise, Mure.
    macaroonList:        [mangue, ananas, kiwi, cerise, mure]
    picture:             agnes.jpg
    highlighted:         false
-   price:               21f
+   price:               21.00f
 
 Composition(ambre):
    name:                L'Ambre
-   shortDescription:    Composée de macarons aux saveurs esquises, idéal pour voyager.
-   fullDescription:     Cette composition aux doux parfums exotique est composée de macarons aux parfums Noisette, Speculos, Orange, Chocolat, Café.
-   macaroonList:        [noisette, speculos, orange, chocolat, cafe]
+   shortDescription:    Cette composition cocasse est composée de macarons aux parfums Noisette, Speculos, Orange, Chocolat, Café.
+   fullDescription:     Cette composition cocasse est composée de macarons aux parfums Noisette, Speculos, Orange, Chocolat, Café.
+   macaroonList:        [noisette, speculos, orange, myrtille, citronVert]
    picture:             ambre.jpg
    highlighted:         false
-   price:               21f
+   price:               21.00f
 
 #### Events entries
 

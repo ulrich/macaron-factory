@@ -6,6 +6,8 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 
+import org.apache.commons.lang.StringUtils;
+
 import play.data.validation.Required;
 import play.db.jpa.Model;
 
@@ -40,5 +42,9 @@ public class Composition extends Model {
    public static List<Composition> findHighlighted() {
       // find the highlighted composition (two max)
       return Composition.find("byHighlighted", true).fetch(1, 2);
+   }
+
+   public String getShortDescription() {
+      return StringUtils.abbreviate(shortDescription, 80);
    }
 }
