@@ -18,14 +18,14 @@
                                  #{list items:events, as:'event'}
                                     <tr id="event">
                                        <td width="20%" align="right" valign="top" >
-                                          <IMG SRC="@{'/public/images/dot-grey.jpg'}" ALT=""/>
+                                          <img src="@{'/public/images/dot-grey.jpg'}" alt=""/>
                                        </td>
                                        <td width="60%" align="left">
                                           <span class="eventDate">${event.date.format("dd-MM-yyyy")}</span><br/>
-                                          <span class="eventDescription">${event.description}</span><br/>
+                                          <span class="eventDescription">${URLDecoder.decode(event.description, 'UTF-8')}</span><br/>
                                        </td>
                                        <td width="20%">
-                                          <IMG SRC="@{'/public/images/spacer.gif'}" ALT="">
+                                          <img src="@{'/public/images/spacer.gif'}" alt="">
                                        </td>
                                     </tr>
                                  #{/list}
