@@ -10,7 +10,12 @@
                            <table BORDER="0" CELLPADDING="5" CELLSPACING="0">
                               <tr>
                                  <td>
-		                              <span class="compositionShortDescriptionTitle">${composition.name}</span><br/><br/>
+                                    <img src="@{'/public/images/coffret.jpg'}" alt="">
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+		                              <span class="compositionShortDescriptionTitle">${composition.name}</span><br/>
 		                              <span class="compositionFullDescription">${composition.fullDescription}</span><br/>
                                  </td>
                               </tr>
@@ -73,7 +78,9 @@
                         <td width="45%" valign="top">
                            <table BORDER="0" CELLPADDING="0" CELLSPACING="0">
                               <tr>
-                                 <span class="compositionShortDescriptionTitle">Nos compositions :</span><br/><br/>
+                                 <td>
+                                    <img src="@{'/public/images/compositions.jpg'}" alt="">
+                                 </td>
                               </tr>
                               #{if compositions.size()}
                                  <tr>
