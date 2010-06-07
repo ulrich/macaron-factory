@@ -1,0 +1,55 @@
+
+1. Etape de mise en production
+------------------------------
+
+L'idée est décrire rapidement une montée de version simple de l'application en version 1.0.1 en 1.0.3
+
+   - Copier/coller le répertoire de dev en cours "macaron-factory-1.0.3" avec la dernière version,
+   
+   - Se déplacer dans le répertoire de livraison,
+
+   - Update du fichier "application.conf" de Play! :
+      - Modifier l'entrée "Application mode" de "dev" à "prod",
+      - Modifier l'entrée "Server configuration" en décommentant le champ "http.port" pour utiliser "80",
+
+   - Update du FS :
+      - Effacer les fichiers/répertoires :
+         - .git,
+         - .settings,
+         - eclipse,
+         - graphics,
+         - test,
+         - test-result,
+         - tmp,
+         - readme,
+         - .classpath,
+         - .gitignore,
+         - .project.
+
+   - Copier/coller l'application sur le serveur dans le path "/home/{user_name}/macaron-factory/preprod/site",
+
+   - Lancer la commande "sudo /opt/play/play-1.0.2.1/play start macaron-factory-1.0.3/" -Dhttp.port=9876
+
+   - Faire un "tail -f macaron-factory-1.0.3/logs/system.out" pour valider le démarrage,
+
+   - Après validation, faire "less macaron-factory-1.0.3/server.pid" pour récupérer le PID de l'application,
+
+   - Faire un "sudo kill -9 {PID}"
+
+   - Faire un "rm -f macaron-factory-1.0.3/server.pid"
+
+   - Faire un "cd /home/{user_name}/macaron-factory/prod/site",
+
+   - Faire un "sudo mv ../../preprod/site/macaron-factory-1.0.3/ ."
+
+   - Faire "less macaron-factory-1.0.1/server.pid" pour récupérer le PID de l'application,
+
+   - Faire "sudo kill -9 {PID}"
+
+   - Lancer la commande "sudo /opt/play/play-1.0.2.1/play start macaron-factory-1.0.3/"
+
+   - Faire un "tail -f macaron-factory-1.0.3/logs/system.out" pour valider le démarrage,
+
+   - Valider,
+
+   - Effacer la version n-2 de l'application.
