@@ -240,13 +240,11 @@ Event(juneEvent1):
 
 Event(mayEvent1):
    date:          2010-05-05
-#  description:   'Venez découvrir notre nouvelle composition fruitée nommée \<a href=\"#\" class=\"a\">Angèle</a>.'
-   description:   Venez découvrir notre nouvelle composition fruitée nommée Angèle.
+   description:   Venez découvrir notre nouvelle composition fruitée nommée <a href="/compositions/1" class="a">Angélina</a>.
 
 Event(aprilEvent2):
    date:          2010-04-23
-#  description:   Soyez les premiers à être informés sur nos créations et évenements sur <a href=\"http://twitter.com/macaronfactory\" class=\"a\" target=\"_blank\">Twitter</a>.
-   description:   Soyez les premiers à être informés sur nos créations et évenements sur Twitter !
+   description:   Soyez les premiers à être informé sur nos créations et événements sur <a href="http://twitter.com/macaronfactory" class="a" target="_blank">Twitter</a>.
 
 Event(aprilEvent1):
    date:          2010-04-01
