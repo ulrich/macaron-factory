@@ -2,41 +2,114 @@
 #{set title:'Contact' /}
 
             <table style="border-color: #cccccc; border-style: dotted; border-width: 1px; margin-top: 20px; margin-bottom: 20px" width="850px" cellpadding="0px" cellspacing="5px">
-               <tr>
-                  <td>
-                     <p class="text2" style="text-align: justify">
-                        <span class="text3">Notre adresse :</span>
-                        <span>
-                           <p style="margin-left: 10px; margin-top: 5px">
-                              11, rue Jean-Claude Mary<br/>
-                              78300 Poissy
-                           </p>
+               <tr valign="top" align="left">
+                  <td width="33%" bgcolor="">
+                     <div class="text2" style="text-align: center; margin-right: 0px">
+                        <span class="text3">Adresse</span><br/>
+                        <span style="margin-top: 5px">
+                           11, rue Jean-Claude Mary<br/>
+                           78300 Poissy
                         </span>
-                     </p>
+                     </div>
+                  </td>
+                  <td width="33%" bgcolor="">
+                     <div class="text2" style="text-align: center; margin-right: 0px">
+                        <span class="text3">Email</span><br/>
+                        <span style="margin-top: 5px">
+                           contact@macaron-factory.com
+                        </span>
+                     </div>
+                  </td>
+                  <td width="33%" bgcolor="">
+                     <div class="text2" style="text-align: center; margin-right: 0px">
+                        <span class="text3">T&eacute;l&eacute;phone</span><br/>
+                        <span style="margin-top: 5px">
+                           06 22 14 23 58
+                        </span>
+                     </div>
                   </td>
                </tr>
                <tr>
-                  <td>
-                     <p class="text2" style="text-align: justify">
-                        <span class="text3">Par t&eacute;l&eacute;phone :</span>
-                        <span>
-                           <p style="margin-left: 10px; margin-top: 5px">
-                              06 22 14 23 58
-                           </p>
-                        </span>
-                     </p>
+                  <td colspan="3">
+                     <hr style="border-width: 1px; border-color: #cccccc; border-style: dotted" width="90%"/>
                   </td>
                </tr>
                <tr>
-                  <td class="text2" style="text-align: justify">
-                     <p class="text2" style="text-align: justify">
-                        <span class="text3">Par email :</span>
-                        <span>
-                           <p style="margin-left: 10px; margin-top: 5px">
-                              contact@macaron-factory.com
-                           </p>
-                        </span>
+                  <td align="center" colspan="3">
+                     <p style="font-size: 12px">
+                        Si vous souhaitez des informations sur nos produits, vous pouvez nous contacter en remplissant le formulaire suivant :
                      </p>
                   </td>
                </tr>
+
+               #{form @sendMessage()}
+               <tr>
+                  <td colspan="3" align="center">
+		               <table style="margin-top: 10px">
+                        #{field 'contact.shortname'}
+                        <tr style="height: 35px">
+                           <td style="font-size: 13px" align="right">
+                              <strong style="margin: 5px">Pr&eacute;nom</strong>
+                           </td>
+                           <td>
+                              <input type="text" name="${field.name}" style="width: 250px; height: 25px; font-size: 12px" />
+                           </td>
+                           <td>
+                              &nbsp;
+                           </td>
+                        </tr>
+                        #{/field}
+                        #{field 'contact.fullname'}
+                        <tr style="height: 35px">
+                           <td style="font-size: 13px" align="right">
+                              <strong style="margin: 5px">Nom</strong>
+                           </td>
+                           <td>
+                              <input type="text" name="${field.name}" style="width: 250px; height: 25px; font-size: 12px"/>
+                           </td>
+                           <td>
+                              &nbsp;
+                           </td>
+                        </tr>
+                        #{/field}
+                        #{field 'contact.email'}
+		                  <tr style="height: 35px">
+		                     <td style="font-size: 13px" align="right">
+		                        <strong style="margin: 5px">Email</strong>
+		                     </td>
+		                     <td>
+		                        <input type="text" name="${field.name}" style="width: 250px; height: 25px; font-size: 12px"/>
+		                     </td>
+                           <td>
+                              *
+                           </td>
+		                  </tr>
+                        #{/field}
+                        #{field 'contact.message'}
+                        <tr style="height: 35px">
+                           <td style="font-size: 13px" align="right">
+                              <strong style="margin: 5px">Message</strong>
+                           </td>
+                           <td>
+                              <textarea name="${field.name}" style="width: 250px; font-size: 12px" rows="5"></textarea>
+                           </td>
+                           <td>
+                              *
+                           </td>
+                        </tr>
+                        #{/field}
+                        <tr>
+                           <td colspan="2" align="right">
+                              <a href="#">
+                                 <input type="submit" value="Envoyer">
+                              </a>
+                           </td>
+                           <td>
+                              &nbsp;
+                           </td>
+                        </tr>
+		               </table>
+	               </td>
+               </tr>
+               #{/form}
             </table>

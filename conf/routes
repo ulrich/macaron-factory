@@ -9,6 +9,7 @@ GET     /compositions/                          Compositions.index
 GET     /compositions/{<[0-9]+>id}              Compositions.show
 GET     /about                                  About.index
 GET     /contact                                Contact.index
+POST    /contact                                Contact.sendMessage
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
