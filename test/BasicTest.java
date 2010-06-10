@@ -2,6 +2,7 @@ import java.util.Date;
 import java.util.List;
 
 import models.Composition;
+import models.Contact;
 import models.Event;
 import models.Macaroon;
 
@@ -129,5 +130,35 @@ public class BasicTest extends UnitTest {
       // finding highlighted composition (max 2)
       List<Composition> highlightedComposition = Composition.findHighlighted();
       assertEquals(2, highlightedComposition.size());
+   }
+
+   public void crudOnContact() {
+      // creating contact entries
+      new Contact("John", "Doe", "john@doe.com", "Hi macaron factory!").save();
+      new Contact("Woopr", "Machine", "woopr@machine.com", "Do you prefer a good chess party?!").save();
+
+      // testing the persisted contact list size
+      assertEquals(2, Contact.count());
+
+      // finding saved John Doe entry
+      Contact johnDoe = Contact.find("byEmail", "john@doe.com").first();
+      assertNotNull(johnDoe);
+      assertEquals("John", johnDoe.shortname);
+
+      // updating john doe entry
+      johnDoe.fullname = "Forman";
+      johnDoe.save();
+
+      // finding new updated John entry
+      johnDoe = Contact.find("byFullName", "Forman").first();
+      assertNotNull(johnDoe);
+      assertEquals("Forman", johnDoe.fullname);
+
+      // deleting contact woopr entry
+      Contact woopr = Contact.find("byEmail", "woopr@machine.com").first();
+      woopr.delete();
+
+      // testing the truncated contact list size
+      assertEquals(1, Contact.count());
    }
 }
