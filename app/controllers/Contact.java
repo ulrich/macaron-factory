@@ -9,10 +9,12 @@ public class Contact extends Controller {
    }
 
    public static void sendMessage(models.Contact contact) {
-      System.out.println(contact.email);
-      System.out.println(contact.fullname);
-      System.out.println(contact.shortname);
-      System.out.println(contact.message);
+      validation.valid(contact);
+      if (validation.hasErrors()) {
+         render("@index", contact);
+      }
+      contact.save();
+      flash.success("Votre message a bien été pris en compte");
       Contact.index();
    }
 }

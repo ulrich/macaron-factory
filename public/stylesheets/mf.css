@@ -86,6 +86,11 @@ td, textarea, input, select {
    line-height: 16px;
 }
 
+.error {
+    color: #c00;
+    font-size: 80%;
+}
+
 .text2 {
 	font-family: tahoma;
 	font-size: 13px;

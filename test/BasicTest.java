@@ -132,6 +132,7 @@ public class BasicTest extends UnitTest {
       assertEquals(2, highlightedComposition.size());
    }
 
+   @Test
    public void crudOnContact() {
       // creating contact entries
       new Contact("John", "Doe", "john@doe.com", "Hi macaron factory!").save();
