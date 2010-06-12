@@ -37,7 +37,12 @@
                <tr>
                   <td align="center" colspan="3">
                      <p style="font-size: 12px">
-                        Si vous souhaitez plus d'informations sur nos produits, vous pouvez nous contacter en remplissant le formulaire suivant :
+                        #{if flash.success}
+                           <strong>Votre message a bien &eacute;t&eacute; pris en compte, nous vous contacterons dans les plus bref d&eacute;lais</strong>
+                        #{/if}
+                        #{else}
+                           Si vous souhaitez plus d'informations sur nos produits, vous pouvez nous contacter en remplissant le formulaire suivant :
+                        #{/else}
                      </p>
                   </td>
                </tr>
