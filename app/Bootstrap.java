@@ -16,7 +16,7 @@ public class Bootstrap extends Job {
       // check email configuration
       Properties properties = Play.configuration;
       String applicationMode = (String) properties.get("application.mode");
-      if ("dev".equals(applicationMode)) {
+      if ("prod".equals(applicationMode)) {
          if (StringUtils.isBlank((String) properties.get("mail.smtp.user")) || StringUtils.isBlank((String) properties.get("mail.smtp.pass"))) {
             throw new RuntimeException("Unable to run application, email settings are blanks");
          }
