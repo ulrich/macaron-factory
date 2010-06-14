@@ -234,6 +234,10 @@ Composition(ambre):
 
 #### Events entries
 
+Event(juneEvent2):
+   date:          2010-06-14
+   description:   Bienvenue aux parfums Fruit de la passion et Fleur d'Oranger
+
 Event(juneEvent1):
    date:          2010-06-01
    description:   Macaron-Factory à livré sa plus grande commande de macaron, près de 500 pièces pour un mariage !
