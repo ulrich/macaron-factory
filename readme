@@ -1,15 +1,24 @@
 1. Etape de mise en production
 ------------------------------
 
-L'idée est décrire rapidement une montée de version simple de l'application en version 1.0.1 en 1.0.3
+L'idée est décrire rapidement une montée de version simple de l'application en version 1.0.3 en 1.0.4
 
-   - Copier/coller le répertoire de dev en cours "macaron-factory-1.0.3" avec la dernière version,
+   - Faire un tag de la version en cours avec la commande :
+      - git tag -m "Create tag 1.0.4" macaron-factory-1.0.4 c39cec480569e73e6c1b,
+      - git push --tag,
+      - git push origin master.
+
+   - Copier/coller le répertoire de dev en cours "macaron-factory-1.0.4" avec la dernière version,
    
    - Se déplacer dans le répertoire de livraison,
 
    - Update du fichier "application.conf" de Play! :
       - Modifier l'entrée "Application mode" de "dev" à "prod",
       - Modifier l'entrée "Server configuration" en décommentant le champ "http.port" pour utiliser "80",
+      - Modifier les entrées mail avec les paramètres de production :
+         - mail.smtp.host=
+         - mail.smtp.user=
+         - mail.smtp.pass=
 
    - Update du FS :
       - Effacer les fichiers/répertoires :
@@ -27,27 +36,29 @@ L'idée est décrire rapidement une montée de version simple de l'application en v
 
    - Copier/coller l'application sur le serveur dans le path "/home/{user_name}/macaron-factory/preprod/site",
 
-   - Lancer la commande "sudo /opt/play/play-1.0.2.1/play start macaron-factory-1.0.3/" -Dhttp.port=9876
+   - Lancer la commande "sudo /opt/play/play-1.0.2.1/play start macaron-factory-1.0.4/ -Dhttp.port=9876"
 
-   - Faire un "tail -f macaron-factory-1.0.3/logs/system.out" pour valider le démarrage,
+   - Faire un "tail -f macaron-factory-1.0.4/logs/system.out" pour valider le démarrage,
 
-   - Après validation, faire "less macaron-factory-1.0.3/server.pid" pour récupérer le PID de l'application,
+   - Faire un tour de validation,
+
+   - Récupérer le PID de l'application avec la commande "less macaron-factory-1.0.4/server.pid",
 
    - Faire un "sudo kill -9 {PID}"
 
-   - Faire un "rm -f macaron-factory-1.0.3/server.pid"
+   - Faire un "rm -f macaron-factory-1.0.4/server.pid"
 
    - Faire un "cd /home/{user_name}/macaron-factory/prod/site",
 
-   - Faire un "sudo mv ../../preprod/site/macaron-factory-1.0.3/ ."
+   - Faire un "sudo mv ../../preprod/site/macaron-factory-1.0.4/ ."
 
-   - Faire "less macaron-factory-1.0.1/server.pid" pour récupérer le PID de l'application,
+   - Faire "less macaron-factory-1.0.3/server.pid" pour récupérer le PID de l'application,
 
    - Faire "sudo kill -9 {PID}"
 
-   - Lancer la commande "sudo /opt/play/play-1.0.2.1/play start macaron-factory-1.0.3/"
+   - Lancer la commande "sudo /opt/play/play-1.0.2.1/play start macaron-factory-1.0.4/"
 
-   - Faire un "tail -f macaron-factory-1.0.3/logs/system.out" pour valider le démarrage,
+   - Faire un "tail -f macaron-factory-1.0.4/logs/system.out" pour valider le démarrage,
 
    - Valider,
 
