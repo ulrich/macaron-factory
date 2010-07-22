@@ -225,8 +225,8 @@ Composition(agnes):
 
 Composition(ambre):
    name:                L'Ambre
-   shortDescription:    Cette composition cocasse est composée de macarons parfums Noisette, Speculos, Orange, Chocolat, Café.
-   fullDescription:     Cette composition cocasse est composée de macarons parfums Noisette, Speculos, Orange, Chocolat, Café.
+   shortDescription:    Cette composition cocasse est composée de macarons parfums Noisette, Speculos, Orange, Myrtille, Citron Vert.
+   fullDescription:     Cette composition cocasse est composée de macarons parfums Noisette, Speculos, Orange, Myrtille, Citron Vert.
    macaroonList:        [noisette, speculos, orange, myrtille, citronVert]
    picture:             ambre.jpg
    highlighted:         false
