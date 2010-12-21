@@ -1,27 +1,27 @@
 1. Etape de mise en production
 ------------------------------
 
-L'idée est décrire rapidement une montée de version simple de l'application en version 1.0.3 en 1.0.4
+L'idÃ©e est dÃ©crire rapidement une montÃ©e de version simple de l'application en version 1.0.3 en 1.0.4
 
    - Faire un tag de la version en cours avec la commande :
       - git tag -m "Create tag 1.0.4" macaron-factory-1.0.4 c39cec480569e73e6c1b,
       - git push --tag,
       - git push origin master.
 
-   - Copier/coller le répertoire de dev en cours "macaron-factory-1.0.4" avec la dernière version,
+   - Copier/coller le rÃ©pertoire de dev en cours "macaron-factory-1.0.4" avec la derniÃ¨re version,
    
-   - Se déplacer dans le répertoire de livraison,
+   - Se dÃ©placer dans le rÃ©pertoire de livraison,
 
    - Update du fichier "application.conf" de Play! :
-      - Modifier l'entrée "Application mode" de "dev" à "prod",
-      - Modifier l'entrée "Server configuration" en décommentant le champ "http.port" pour utiliser "80",
-      - Modifier les entrées mail avec les paramètres de production :
+      - Modifier l'entrÃ©e "Application mode" de "dev" Ã  "prod",
+      - Modifier l'entrÃ©e "Server configuration" en dÃ©commentant le champ "http.port" pour utiliser "8765",
+      - Modifier les entrÃ©es mail avec les paramÃ¨tres de production :
          - mail.smtp.host=
          - mail.smtp.user=
          - mail.smtp.pass=
 
    - Update du FS :
-      - Effacer les fichiers/répertoires :
+      - Effacer les fichiers/rÃ©pertoires :
          - .git,
          - .settings,
          - eclipse,
@@ -36,13 +36,13 @@ L'idée est décrire rapidement une montée de version simple de l'application en v
 
    - Copier/coller l'application sur le serveur dans le path "/home/{user_name}/macaron-factory/preprod/site",
 
-   - Lancer la commande "sudo /opt/play/play-1.0.2.1/play start macaron-factory-1.0.4/ -Dhttp.port=9876"
+   - Lancer la commande "sudo /opt/play/play-1.1/play start macaron-factory-1.0.4/ -Dhttp.port=9876"
 
-   - Faire un "tail -f macaron-factory-1.0.4/logs/system.out" pour valider le démarrage,
+   - Faire un "tail -f macaron-factory-1.0.4/logs/system.out" pour valider le dÃ©marrage,
 
    - Faire un tour de validation,
 
-   - Récupérer le PID de l'application avec la commande "less macaron-factory-1.0.4/server.pid",
+   - RÃ©cupÃ©rer le PID de l'application avec la commande "less macaron-factory-1.0.4/server.pid",
 
    - Faire un "sudo kill -9 {PID}"
 
@@ -52,13 +52,13 @@ L'idée est décrire rapidement une montée de version simple de l'application en v
 
    - Faire un "sudo mv ../../preprod/site/macaron-factory-1.0.4/ ."
 
-   - Faire "less macaron-factory-1.0.3/server.pid" pour récupérer le PID de l'application,
+   - Faire "less macaron-factory-1.0.3/server.pid" pour rÃ©cupÃ©rer le PID de l'application,
 
    - Faire "sudo kill -9 {PID}"
 
-   - Lancer la commande "sudo /opt/play/play-1.0.2.1/play start macaron-factory-1.0.4/"
+   - Lancer la commande "sudo /opt/play/play-1.1/play start macaron-factory-1.0.4/"
 
-   - Faire un "tail -f macaron-factory-1.0.4/logs/system.out" pour valider le démarrage,
+   - Faire un "tail -f macaron-factory-1.0.4/logs/system.out" pour valider le dÃ©marrage,
 
    - Valider,
 
